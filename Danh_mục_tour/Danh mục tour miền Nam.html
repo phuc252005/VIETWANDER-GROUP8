@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục tour miền Nam</title>
+    <link rel="stylesheet" href="listtour.css"> 
+    <script src="listtour.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+<body>
+  <header>
+
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Images-header/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Images-header/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Images-header/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="intro.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a>DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <div style="height: 120px;"></div>
+
+  <div class="underbanner-slideshow">
+    <div class="underbanner-slide active">
+      <a href="tour-noi-bat1.html">
+        <img src="images/Images-header/1.png" alt="Tour nổi bật 1">
+      </a>
+    </div>
+    <div class="underbanner-slide">
+      <a href="tour-noi-bat2.html">
+        <img src="images/Images-header/2.png" alt="Tour nổi bật 2">
+      </a>
+    </div>
+    <div class="underbanner-slide">
+      <a href="tour-noi-bat3.html">
+        <img src="images/Images-header/3.png" alt="Tour nổi bật 3">
+      </a>
+    </div>
+    <div class="underbanner-slide">
+      <a href="tour-noi-bat4.html">
+        <img src="images/Images-header/4.png" alt="Tour nổi bật 4">
+      </a>
+    </div>
+    <div class="underbanner-slide">
+      <a href="tour-noi-bat5.html">
+        <img src="images/Images-header/5.png" alt="Tour nổi bật 5">
+      </a>
+    </div>
+    <div class="underbanner-slide">
+      <a href="tour-noi-bat6.html">
+        <img src="images/Images-header/6.png" alt="Tour nổi bật 6">
+      </a>
+    </div>
+    <!-- Nút điều hướng -->
+    <button class="underbanner-prev" onclick="plusUnderbannerSlides(-1)">&#10094;</button>
+    <button class="underbanner-next" onclick="plusUnderbannerSlides(1)">&#10095;</button>
+  </div>
+  <div class="intro">
+  <h2> Du lịch miền Nam - Khám phá vẻ đẹp thiên nhiên và con người phương Nam</h2>
+  <p>Miền Nam là vùng đất trù phú giàu có được thiên nhiên ưu ái ban tặng. 
+    Chính vì vậy nên nơi đây rất phát triển về du lịch sinh thái. 
+    Đến với tour du lịch Miền Nam, du khách sẽ được nhiều trải nghiệm du lịch sông nước với chợ Nổi, tham quan vườn Quốc gia Cát Tiên, vườn Quốc gia Tràm Chim,... cùng nhau ngắm nhìn hoàng hôn tại biển Vũng Tàu,... 
+    Ngoài ra, đến với Tour Miền Nam du khách còn được trải nghiệm nhiều hoạt động thú vị như làm kẹo dừa, và hái trái miệt vườn tại Bến Tre. </p> 
+  <p>VietWander tin chắc rằng những chuyến du lịch miền Nam sẽ để lại cho du khách và gia đình những trải nghiệm thú vị cùng những kỷ niệm đẹp khó phai.
+    Du khách hãy tham khảo những tour du lịch miền Nam hấp dẫn dưới đây!
+  </p>
+  </div>
+
+<section class="tour-category">
+  <h2>Tour miền Nam phổ biến</h2>
+  <div class="tour-grid" id="popular-tours">
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Nam/Vũng Tàu (2).jpg" alt="Tour 1">
+      <span class="tag">Từ TPHCM</span>
+      </div>
+      <h3>Tour TP.HCM - Vũng Tàu 2N1Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Đồi cừu Suối Nghệ - Bãi Sau - Đảo Long Sơn - Mũi Nghinh Phong
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe khách</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 599.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Nam/Phú Quốc.jpg" alt="Tour 2">
+      <span class="tag">Từ Hà Nội</span>
+      </div>
+      <h3>Tour Hà Nội - Phú Quốc 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Hà Nội - Phú Quốc - Vinpearland - Đảo Ngọc - Hà Nội
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe du lịch đời mới & Máy bay</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 8.500.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Nam/Côn Đảo.jpg" alt="Tour 3">
+      <span class="tag">Từ TPHCM</span>
+      </div>
+      <h3>Tour TP.HCM - Côn Đảo 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: TPHCM - Địa ngục trần gian Côn Đảo - Khu Nam Đảo - Khu Bắc Đảo - Vịnh Côn Sơn - TPHCM
+        <br><i class="fas fa-ship"></i> Phương tiện: Máy bay</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 7.850.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Nam/Long An - Đồng Tháp - Châu Đốc.jpg" alt="Tour 4">
+      <span class="tag">Từ TPHCM</span>
+      </div>
+      <h3>Tour TP.HCM - Long An - Đồng Tháp - Châu Đốc 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: TPHCM – Long An – Đồng Tháp - Châu Đốc – TPHCM
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe khách</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 3.200.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item">
+      <div class="image-container">
+      <img src="images/Miền Nam/Sóc Trăng - Bạc Liêu - Cà Mau.jpg" alt="Tour 5">
+      <span class="tag">Từ Hà Nội</span>
+      </div>
+      <h3>Tour Hà Nội - Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Hà Nội - Cần Thơ - Mỹ Tho - Sóc Trăng - Bạc Liêu - Cà Mau - Cần Thơ - Hà Nội
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe du lịch & Máy bay</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 7.500.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item">
+      <div class="image-container">
+      <img src="images/Miền Nam/An Giang - Cần Thơ.jpg" alt="Tour 6">
+      <span class="tag">Từ TPHCM</span>
+      </div>
+      <h3>Tour TP.HCM - An Giang - Cần Thơ 2N2Đ</h3>
+      <div class="itinerary">
+        <p style="margin-top: 35px"><i class="fas fa-map-marker-alt"></i> Hành trình: TPHCM - Châu Đốc - Rừng Tràm Trà Sư - Cần Thơ - TPHCM
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe du lịch</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 2.186.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item">
+      <img src="images/Miền Nam/Phú Quốc (2).jpg" alt="Tour 7">
+      <h3>Tour Hà Nội - Phú Quốc - Vinpearl Land - Đảo Ngọc 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: TPHCM - Phú Quốc - Vin Wonders - Làng Chài Hàm Ninh - Sunset Sanato - Vinpearl Safari - Nhà Tù Phú Quốc Bãi Sao - TPHCM
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe khách du lịch & Máy bay</p>         
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 6.499.000 đ</span>
+      </div>
+    </div>
+  </div>
+  <button class="load-more" onclick="toggleTours('popular-tours')">Xem thêm</button>
+</section>
+
+<section class="interested">
+  <hr class="divider">
+  <h2>Các điểm đến hấp dẫn vùng đất phía Nam</h2>
+  <div class="slideshow-container">
+    <div class="image-section">
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <img id="main-image" src="images/Miền Nam/Bản đồ miền Nam.jpg" alt="Slide Image">
+      <button class="next" onclick="changeSlide(1)">❯</button>
+      <div class="thumbnail-container">
+        <img src="images/Miền Nam/Bản đồ miền Nam.jpg" onclick="currentSlide(1)" class="thumbnail active" 
+             data-title="Miền Nam Việt Nam" 
+             data-description="Trước khi tìm hiểu về những địa danh nổi tiếng khi du lịch miền Nam thì VietWander sẽ giới thiệu qua đôi nét về vùng đất phía Nam Tổ quốc này.||Miền Nam Việt Nam bao gồm 17 tỉnh bắt đầu từ tỉnh Bình Phước kéo dài xuống phía nam của dải đất hình chữ S. Miền Nam bao gồm 2 vùng chính là Đông Nam Bộ và Đồng bằng sông Cửu Long hay còn được gọi là vùng Tây Nam Bộ, miền Tây.||Với hệ thống sông ngòi chằng chịt và đồng bằng sông Cửu Long trù phú, miền Nam Việt Nam là điểm đến lý tưởng cho du lịch sinh thái và khám phá văn hóa.">
+        <img src="images/Miền Nam/Kiên Giang.jpg" onclick="currentSlide(2)" class="thumbnail" 
+             data-title="Kiên Giang - Nơi sở hữu vô số thiên đường biển đảo" 
+             data-description="Nằm ở cực Tây Nam Việt Nam, nơi vừa giáp vịnh Thái Lan, vừa sở hữu những cánh rừng nguyên sinh, những quần đảo hoang sơ, Kiên Giang xứng đáng được gọi là “Hòn ngọc biển Đông Nam Á” – không chỉ vì cảnh đẹp, mà còn vì chất tình người miền biển mộc mạc, chân chất.||Nhắc đến Kiên Giang, khó có ai bỏ qua Phú Quốc – thiên đường biển đảo với làn nước xanh như ngọc, bờ cát trắng mịn và hàng loạt trải nghiệm đáng nhớ: từ tắm biển ở Bãi Sao, lặn ngắm san hô ở Hòn Gầm Ghì, trải nghiệm cáp treo ba dây vượt biển dài nhất thế giới, cho đến hành trình khám phá Vinpearl Safari hay Grand World rực rỡ ánh đèn về đêm.">
+        <img src="images/Miền Nam/An Giang.jpg" onclick="currentSlide(3)" class="thumbnail" 
+             data-title="An Giang - Vùng Bảy Núi & Các trải nghiệm đậm đà Miền Tây" 
+             data-description="Tọa lạc ở vùng đồng bằng sông Cửu Long, An Giang mang trong mình vẻ đẹp bình dị đặc trưng của miền Tây sông nước, nơi những dòng sông, kênh rạch và cánh đồng lúa mênh mông tạo nên bức tranh thiên nhiên xanh mát và yên bình. Đây là điểm đến lý tưởng cho những ai muốn trải nghiệm một miền Tây vừa gần gũi, vừa mang dấu ấn văn hóa đậm nét.||An Giang nổi bật với hệ thống chùa chiền cổ kính và linh thiêng như Chùa Bà Chúa Xứ, Tây An Cổ Tự, chùa Hang,… Chuyến đi đến An Giang sẽ không trọn vẹn nếu bạn chưa thử qua những món đặc sản đậm chất miền Tây như bún cá, mây gai hay những thức quà nổi tiếng từ thốt nốt – loại trái đặc trưng gắn liền với vùng đất này.">
+        <img src="images/Miền Nam/Vũng Tàu.jpg" onclick="currentSlide(4)" class="thumbnail" 
+             data-title="Vũng Tàu - Địa điểm du lịch hấp dẫn gần Sài Gòn" 
+             data-description="Chỉ cách Sài Gòn khoảng 2 tiếng di chuyển, Vũng Tàu luôn là lựa chọn hàng đầu cho những ai muốn “xả hơi” cuối tuần. Dù đi bằng tàu cao tốc Greenlines DP hay chọn limousine chất lượng cao, hành trình đến Vũng Tàu luôn nhẹ nhàng, nhanh gọn và... đầy hứa hẹn.||
+              Nhắc đến Vũng Tàu thì Bãi Trước và Bãi Sau chính là đặc sản  đầu tiên phải ghé. Bãi Trước sôi động, đông đúc với đủ trò thể thao biển từ lướt sóng, tắm nắng đến dạo biển giữa nhịp sống sôi nổi. Trong khi đó, Bãi Sau lại mang dáng vẻ trầm lặng, dịu dàng – nơi lý tưởng để bạn ngồi một mình nghe sóng vỗ, hoặc cùng người thương đi dạo chân trần trên cát lúc hoàng hôn.">
+        <img src="images/Miền Nam/Cà Mau.jpg" onclick="currentSlide(5)" class="thumbnail" 
+             data-title="Cà Mau - Miền đất cực Nam của Tổ Quốc" 
+             data-description="Cứ mỗi lần nhìn vào bản đồ hình chữ S, ánh mắt ta lại chạm vào mảnh đất mũi Cà Mau – nơi tận cùng phía Nam của Tổ quốc, nơi ba mặt tiếp biển, nơi rừng ngập mặn ôm lấy sóng bạc đầu. Nhưng Cà Mau không chỉ đặc biệt vì địa lý. Đó còn là vùng đất hoang sơ, phóng khoáng, và đầy tự hào – mang theo khí chất riêng biệt của miền cuối trời đất Việt.||
+              Mũi Cà Mau, nơi đặt cột mốc tọa độ GPS 0001 – cây số 0, là điểm đến mà bất kỳ tín đồ xê dịch nào cũng khao khát một lần được đặt chân tới. Đứng ở nơi cực Nam, nhìn ra biển lớn, nghe sóng vỗ dưới chân đài quan sát, cảm giác như vừa chạm vào biên giới thiêng liêng giữa đất – trời – biển cả.">
+      </div>
+    </div>
+    <div class="description">
+      <h2 id="slide-title">Miền Nam Việt Nam</h2>
+      <div id="slide-description"></div>
+    </div>
+  </div>
+</section>
+  <section class="seemore">
+  <hr class="divider">
+  <h2>Có thể bạn quan tâm</h2>
+  <div class="moretour">
+    <h2>Tham khảo các tour khác</h2>
+  <div class="tour-grid" id="more-tours">
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Bắc/hà nội - tam đảo.jpg" alt="Tour 5">
+      <span class="tag">Từ Hà Nội</span>
+      </div>
+      <h3>Tour Hà Nội - Tam Đảo 2N1Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Hà Nội - Tam Đảo - Nhà thờ đá - Cầu Mây - Vườn quốc gia Tam Đảo - Đền Bà Chúa Thượng Ngàn - Hà Nội
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe khách du lịch</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 1.299.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Bắc/hà nội - hạ long.jpg" alt="Tour 6">
+      <span class="tag">Từ Hà Nội</span>  
+      </div>
+      <h3>Tour Hà Nội - Hạ Long 3N2Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Hà Nội - Hạ Long - Bãi Cháy - Vịnh Hạ Long - Hà Nội
+        <br><i class="fas fa-ship"></i> Phương tiện: Xe khách du lịch</p>         
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 3.099.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Trung/TPHCM - Đà Lạt.png" alt="Tour 3">
+      <span class="tag">Từ TPHCM</span>
+      </div>
+      <h3>Tour TP.HCM - Đà Lạt 3N2Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: TP. Hồ Chí Minh - Đà Lạt - Dinh Bảo Đại - Thác Datanla -  Núi Langbiang - Ga xe lửa cổ - TP. Hồ Chí Minh
+        <br><i class="fas fa-ship"></i> Phương tiện: Ô tô du lịch đời mới</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 3.899.000 đ</span>
+      </div>
+    </div>
+    <div class="tour-item visible">
+      <div class="image-container">
+      <img src="images/Miền Trung/Hà Nội - Quảng Bình.png" alt="Tour 4">
+      <span class="tag">Từ Hà Nội</span>
+      </div>
+      <h3>Tour Hà Nội - Quảng Bình 4N3Đ</h3>
+      <div class="itinerary">
+        <p><i class="fas fa-map-marker-alt"></i> Hành trình: Hà Nội - Quảng Bình - Làng Bích họa Cảnh Dương - Động Thiên Đường - Nhà lưu niệm Đại Tướng Võ Nguyên Giáp - Tháp Chuông - Hà Nội
+        <br><i class="fas fa-ship"></i> Phương tiện: Máy bay & Ô tô du lịch</p>
+      </div>
+      <div class="tour-info">
+        <button>Xem chi tiết</button>
+        <span class="price">Giá: 4.389.000 đ</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="new">
+    <h2>Tin tức liên quan</h2>
+    <a href="../Trang_tin_tức/Tin_chi_tiết/Tin_Ẩm_thực_miền_Nam.html"><li>Mê mẩn với những món ăn độc đáo trong nền ẩm thực miền Nam</li></a>
+    <a href="../Trang_tin_tức/Tin_chi_tiết/Tin_Tối_ưu_trải_nghiệm_ẩm_thực_địa_phương.html"><li>Cách tối ưu trải nghiệm ẩm thực địa phương</li></a>
+    <a href="../Trang_tin_tức/Tin_chi_tiết/Tin_giữ_gìn_sức_khỏe_khi_du_lịch_dài_ngày.html"><li>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li></a>
+    <a href="../Trang_tin_tức/Tin_chi_tiết/Tin_7_trải_nghiệm_mạo_hiểm.html"><li>7 trải nghiệm mạo hiểm không nên bỏ lỡ tại Việt Nam</li></a>
+  </div>
+  <div class="popular-destinations">
+    <h2>Các điểm du lịch phổ biến</h2>
+    <div class="destinations-grid">
+      <div class="destination-card" style="background-image: url('images/hồ\ gươm.jpg')">
+        <div class="overlay">
+          <h3>Hà Nội</h3>
+        </div>
+      </div>
+      <div class="destination-card" style="background-image: url('images/hạ\ long.jpg')">
+        <div class="overlay">
+          <h3>Hạ Long</h3>
+        </div>
+      </div>
+      <div class="destination-card" style="background-image: url('images/đà\ nẵng.jpg')">
+        <div class="overlay">
+          <h3>Đà Nẵng</h3>
+        </div>
+      </div>
+      <div class="destination-card" style="background-image: url('images/đà\ lạt\ 2.png')">
+        <div class="overlay">
+          <h3>Đà Lạt</h3>
+        </div>
+      </div>
+      <div class="destination-card" style="background-image: url('images/nha\ trang.png')">
+        <div class="overlay">
+          <h3>Nha Trang</h3>
+        </div>
+      </div>
+      <div class="destination-card" style="background-image: url('images/phú\ quốc.jpg')">
+        <div class="overlay">
+          <h3>Phú Quốc</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>VIETWANDER</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>HOTLINE: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Điều khoản và quy định</h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Images-header/back.png"></button>
+  
+</body>
+</html>
