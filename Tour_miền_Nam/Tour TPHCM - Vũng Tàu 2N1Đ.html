@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Vũng Tàu</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Vũng Tàu/Slideshow (1).jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images//Vũng Tàu/Slideshow (2).jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Vũng Tàu/Slideshow (3).jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Vũng Tàu/Slideshow (4).jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Du lịch Vũng Tàu<br>Điểm đến hấp dẫn trong mùa hè</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">TPHCM - Vũng Tàu</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 2 ngày 1 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">599.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>799.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Vũng Tàu là điểm lựa chọn nhiều vì rất gần với TP.HCM, thời gian đi xe từ 02h00 – 02h30, rất thích hợp để  thay đổi không khí, ngắm cảnh biển Vũng Tàu.
+        Với lịch trình chi tiết, VietWander sẽ đưa du khách tham quan nhiều địa điểm hấp dẫn và trải nghiệm nhiều điều mới lạ!
+      </b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Vũng Tàu/Mũi\ Nginh\ Phong.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về biển Vũng Tàu</h2>
+        <h3>Biển Vũng Tàu: Chạm đến nắng vàng, cát trắng, biển xanh</h3>
+        <p>Biển Vũng Tàu nằm ở tỉnh Bà Rịa – Vũng Tàu, cách TPHCM khoảng 110 km. 
+          Với 42 km đường bờ biển, Vũng Tàu được biết đến là một địa điểm nghỉ dưỡng được yêu thích nhất tại Việt Nam, 
+          Những bãi biển nổi tiếng nhất tại nơi đây có thể kể đến là Bãi Sau, Bãi Trước, Bãi Dâu, Bãi Dứa,…</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Vũng Tàu/Bãi\ Sau\ Vũng\ Tàu.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Vũng Tàu 2N1Đ</h2>
+        <p>Ngày 1: Di chuyển TPHCM - Vũng Tàu, tham quan đồi cừu Suối Nghệ, Thích Ca Phật Đài, tượng Chúa Kitô, Niết Bàn Tịnh Xá, tắm biển ở Bãi Sau.</p>
+        <p>Ngày 2: Khám phá đảo Long Sơn, mũi Nghinh Phong; Tham quan chùa Phước Hải, nhà thờ giáo xứ Song Vĩnh.</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Vũng Tàu 2 ngày 1 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: TPHCM - Vũng Tàu</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Đón quý khách tại các điểm hẹn.</li>
+          <li>Dừng chân tại Long Thành để dùng điểm tâm sáng.</li>
+          <li>Tham quan Đồi cừu Suối Nghệ, Thích Ca Phật Đài</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đoàn tập trung dùng cơm trưa tại nhà hàng.</li>
+          <li>Sau đó về khách sạn nhận phòng, gửi hành lý và nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tham quan tượng Chúa Kitô, Niết Bàn Tịnh Xá.</li>
+          <li>Tự do tắm biển ở Bãi Sau</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Đoàn ăn tối tại nhà hàng.</li>
+          <li>Sau bữa tối, quý khách tự do khám phá thành phố Vũng Tàu về đêm, thưởng thức các món ngon.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Đồi cừu Suối Nghệ.jpg" alt="Đồi cừu Suối Nghệ">
+        <div class="caption">Đồi cừu Suối Nghệ</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Hải sản Vũng Tàu.jpg" alt="Hải sản Vũng Tàu">
+        <div class="caption">Hải sản Vũng Tàu</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Niết Bàn Tịnh Xá.jpg" alt="Niết Bàn Tịnh Xá">
+        <div class="caption">Niết Bàn Tịnh xá</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Bãi Sau Vũng Tàu.jpg" alt="Bãi sau Vũng Tàu">
+        <div class="caption">Bãi Sau Vũng Tàu</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Đảo Long Sơn.jpg" alt="Đảo Long Sơn">
+        <div class="caption">Đảo Long Sơn</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Mũi Nginh Phong.jpg" alt="Mũi Nghinh Phong">
+        <div class="caption">Mũi Nghinh Phong</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Chùa Phước Hải.jpg" alt="Chùa Phước Hải">
+        <div class="caption">Chùa Phước Hải</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Vũng Tàu/Nhà thờ giáo xứ Song Vĩnh.jpg" alt="Nhà thờ giáo xứ Song Vĩnh">
+        <div class="caption">Nhà thờ giáo xứ Song Vĩnh</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Vũng Tàu - TPHCM</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Ăn sáng tại nhà hàng của khách sạn.</li>
+          <li>Khám phá đảo Long Sơn.</li>
+          <li>Khám phá mũi Nghinh Phong.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Dùng cơm trưa. Làm thủ tục trả phòng</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Tham quan chùa Phước Hải, nhà thờ giáo xứ Song Vĩnh.</li>
+          <li>Trở lại TPHCM dự kiến lúc 17h00, kết thúc chuyến du lịch Vũng Tàu 2 ngày 1 đêm.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Phần lưu ý về giá tour-->
+  <div class="note-container">
+  <h2>Lưu ý:</h2>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+      <li><strong>Phương tiện di chuyển:</strong></li>
+    <ul>
+    <li>Xe khách máy lạnh đưa đón khứ hồi TPHCM - Vũng Tàu.</li>
+    </ul>
+    <li><strong>Hướng dẫn viên:</strong></li>
+    <ul>
+    <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục đón khách tại TPHCM.</li>
+    <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Vũng Tàu.</li>
+    </ul>
+    <li><strong>Lưu trú:</strong></li>
+    <ul>
+    <li>Khách sạn 3 sao. Tiêu chuẩn 02 khách/ phòng. Nếu lẻ sẽ ngủ ghép 3 khách/ phòng hoặc ngủ riêng nếu quý khách yêu cầu (Có phí phụ thu phòng đơn).</li>
+    </ul>
+    <li><strong>Ăn uống:</strong></li>
+    <ul>
+    <li>Ăn sáng: 02 bữa ăn sáng tại Khách sạn.</li>
+    <li>Ăn chính: 03 bữa với thực đơn địa phương phong phú, đổi món theo ngày.</li>
+    </ul>
+    <li><strong>Tham quan:</strong></li>
+    <ul>
+    <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+    </ul>
+    <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 20.000.000 VNĐ/ người.</li>
+    <li><strong>Quà tặng:</strong> Nước suối (1 chai/ ngày) + Mũ du lịch.</li>
+    </ul>
+  </div>
+
+  <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+  </div>
+  <div class="note-content">
+    <ul>
+    <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+    <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+    <li>Điện thoại, giặt ủi,...trong khách sạn.</li>
+    <li>Chi phí tham gia các trò chơi trên biển.</li>
+    <li>Phụ thu phòng đơn và các phụ phí khác (nếu có).</li>
+    <li>Tip cho tài xế và hướng dẫn viên.</li>
+    </ul>
+    </div>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+    <li>Trẻ em từ 10 tuổi trở lên: Tính 100% giá tour.</li>
+    <li>Trẻ em từ 05 - 09 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+    <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour (Vé máy bay theo quy định hãng hàng không).</li>
+    </ul>
+    </div>
+  </div>
+
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/An Giang - Cần Thơ/Rừng tràm Trà Sư nhìn từ trên cao.jpg" alt="An Giang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tour An Giang - Cần Thơ 2N2Đ</a></h3>
+          <p>Mang trong mình vẻ đẹp khung cảnh sông nước hữu tình và những nét đẹp văn hóa...</p>
+          <p class="readmore"><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/An Giang - Cần Thơ/Slideshow (1).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (2).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (3).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (4).jpg" alt="Cà Mau" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour Hà Nội - Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ.html">Tour Hà Nội - Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ</a></h3>
+          <p>Với sự kết hợp độc đáo giữa vẻ đẹp thiên nhiên, văn hóa truyền thống và...</p>
+          <p class="readmore"><a href="Tour Hà Nội - Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (1).jpg" alt="">
+            <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (2).jpg" alt="">
+            <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (3).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+          <img src="images/Côn Đảo/Hòn Bảy Cạnh.jpg" alt="Côn Đảo" class="main-image">
+          <div class="tour-info">
+            <h3><a href="Tour TPHCM - Côn Đảo 4N3Đ.html">Tour TP.HCM - Côn Đảo 4N3Đ</a></h3>
+            <p>Huyện Côn đảo là một quần đảo ngoài khơi Bà Rịa - Vũng Tàu...</p>
+            <p class="readmore"><a href="Tour TPHCM - Côn Đảo 4N3Đ.html">Tìm hiểu thêm</a></p>
+            <div class="small-images">
+              <img src="images/Côn Đảo/Bãi Nhát - Bãi biển hoang sơ nhất nhì châu Á.jpg" alt="">
+              <img src="images/Côn Đảo/Khu biệt giam chuồng cọp Côn Đảo.jpg" alt="">
+              <img src="images/Côn Đảo/Cua mặt trăng - Đặc sản Côn Đảo.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>

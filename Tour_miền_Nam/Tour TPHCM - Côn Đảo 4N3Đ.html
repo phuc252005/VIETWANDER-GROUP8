@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Côn Đảo</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Côn Đảo/Slideshow (1).jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Côn Đảo/Slideshow (2).jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Côn Đảo/Slideshow (3).jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Côn Đảo/Slideshow (4).jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Du lịch Côn Đảo<br>Những trải nghiệm không thể bỏ qua</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">TPCHM - Côn Đảo</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 4 ngày 3 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Máy bay</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">7.850.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>8.500.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Côn Đảo gắn liền với những hình ảnh Cầu Tàu 914, Chuồng Bò, Chuồng Cọp, Nghĩa Trang Hàng Dương, địa ngục trần gian Côn Sơn...
+        Nơi đây giờ đây đã biến mình thành thiên đường nghỉ đưỡng dành cho những ai yêu thích cái đẹp, muốn khám phá những bí ẩn lịch sử trong quá khứ và trải nghiệm những kỳ quan thiên nhiên của hòn đảo nằm giữa ngàn khơi xa xăm của Biển Đông. 
+        Hãy cùng đồng hành cùng VietWander để khám phá tour du lịch Côn Đảo 4 ngày 3 đêm nhé!
+      </b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Côn Đảo/Hòn\ Bảy\ Cạnh.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Côn Đảo</h2>
+        <h3>Côn Đảo - sự kết hợp giữa thiên nhiên hoang sơ và giá trị lịch sử sâu sắc</h3>
+        <p>Huyện Côn đảo là một quần đảo ngoài khơi Bà Rịa - Vũng Tàu. Quần đảo rộng 76 km2 này bao gồm 16 hòn đảo, lớn nhất là đảo Côn Sơn. 
+            Côn Đảo cách Vũng Tàu 185 km, cách TP HCM 230 km, cách Cần Thơ khoảng 83 km. 
+            Dịch vụ giao thông, lữ hành, lưu trú, ăn uống trên đảo phát triển khiến địa danh này ngày càng thăng hạng trên bản đồ du lịch.</p>
+        <p>Côn Đảo nổi bật với vẻ đẹp hoang sơ, yên bình và giàu giá trị lịch sử. 
+            Nơi đây từng là “địa ngục trần gian” với hệ thống nhà tù khét tiếng. Ngày nay trở thành điểm du lịch tâm linh với các di tích như Nhà tù Côn Đảo, nghĩa trang Hàng Dương, mộ cô Sáu… 
+            Bên cạnh đó, du lịch Côn Đảo còn cuốn hút bởi những bãi biển tuyệt đẹp, hệ sinh thái biển đa dạng, cơ hội xem rùa đẻ trứng, lặn ngắm san hô…</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Côn Đảo/Cảng\ Bến\ Đầm.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Côn Đảo 4N3Đ</h2>
+        <p>Ngày 1: TPHCM - Tour Côn Đảo</p>
+        <p>Ngày 2: Du lịch Côn Đảo - Khám phá danh lam thắng cảnh</p>
+        <p>Ngày 3: Tour Côn Đảo - Khám phá vịnh Côn Sơn</p>
+        <p>Ngày 4: Côn Đảo - TPHCM</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Côn Đảo 4 ngày 3 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: TPHCM - Tour Côn Đảo</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>HDV đón quý khách tại sân bay Tân Sơn Nhất khởi hành đi Côn Đảo.</li>
+          <li>Đến Côn Đảo xe đón đoàn về khách sạn nhận phòng - Nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li> Đoàn dùng cơm trưa tại nhà hàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Đoàn khởi hành khám phá địa ngục trần gian Côn Sơn với các điểm di tích lịch sử sau:
+          <br>- Dinh chúa Đảo
+          <br>- Trại tù Phú Sơn, Phú Hải
+          <br>- Chuồng cọp kiểu Pháp
+          <br>- Khu biệt lập Chuồng Bò
+          <br>- Nghĩa trang Hàng Dương
+          <br>- Miếu bà Phi Yến
+          <br>- Chùa Núi Một
+          </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Quý khách nghỉ ngơi trong khách sạn hay la cà khám phá ẩm thực miền biển tại các nhà hàng địa phương.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Côn Đảo/Dinh chúa Đảo.jpg" alt="Dinh chúa Đảo">
+        <div class="caption">Dinh chúa Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Khu biệt giam chuồng cọp Côn Đảo.jpg" alt="Khu biệt giam chuồng cọp Côn Đảo">
+        <div class="caption">Khu biệt giam chuồng cọp Côn Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Nghĩa trang Hàng Dương.jpg" alt="Nghĩa trang Hàng Dương">
+        <div class="caption">Nghĩa trang Hàng Dương</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Miếu bà Phi Yến (An Sơn Miếu).jpg" alt="Miếu bà Phi Yến">
+        <div class="caption">Miếu bà Phi Yến (An Sơn Miếu)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Côn Đảo/Cảng Bến Đầm.jpg" alt="Cảng Bến Đầm">
+        <div class="caption">Cảng Bến Đầm</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Bãi Nhát - Bãi biển hoang sơ nhất nhì châu Á.jpg" alt="Bãi Nhát">
+        <div class="caption">Bãi Nhát - Bãi biển hoang sơ nhất nhì châu Á</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Bãi Suối Nóng - Bãi biển bí ẩn ở Côn Đảo.jpg" alt="Bãi Suối Nóng">
+        <div class="caption">Bãi Suối Nóng - Bãi biển bí ẩn ở Côn Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Chùa Núi Một (Vân Sơn Tự).jpg" alt="Chùa Núi Một">
+        <div class="caption">Chùa Núi Một (Vân Sơn Tự)</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Du lịch Côn Đảo - Khám phá danh lam thắng cảnh</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Quý khách ăn điểm tâm sáng tại nhà hàng của khách sạn.</li>
+          <li>Tham quan Nam Đảo với các điểm đến sau:
+          <br>- Cảng Bến Đầm
+          <br>- Bãi Nhát
+          <br>- Cơ sở nuôi cấy ngọc trai Côn Đảo
+          <br>- Chùa Núi Một</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa tự túc tại các nhà hàng trong khu du lịch.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Khám phá Bắc Đảo với các điểm tham quan sau:
+            <br>- Miếu Hoàng tử Cải
+            <br>- Bãi Đầm Trầu
+            <br>- Bãi Suối Nóng
+          </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Quý khách dùng cơm tối, nghỉ ngơi trong khách sạn hay tự do khám phá Côn Đảo về đêm.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Tour Côn Đảo - Khám phá Vịnh Côn Sơn</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Du khách ăn sáng tại khách sạn.</li>
+          <li>Quý khách khám Phá Vịnh Côn Sơn Vịnh Côn Sơn bao gồm hệ thống 14 hòn đảo nhỏ to khác nhau với chuỗi hòn Tài, hòn Trác, hòn Thỏ,... 
+            quây quần như một đại gia đình và hòn Bảy Cạnh, Bông Lan, hòn Cau, hòn Trứng, hòn Tre... hùng vĩ giữa khơi xa.</li>
+          <li> Cùng với hành trình, du khách có dịp được trải nghiệm những khoảnh khắc khó quên nhất cùng Hòn Bảy Cạnh hay Hòn Tài: 
+            Hòn Bảy Cạnh là hòn đảo lớn thứ hai trong số 16 hòn đảo thuộc quần đảo Côn Đảo, có số lượng rùa biển lên đẻ nhiều nhất Việt Nam.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đoàn dùng tại nhà hàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tiếp tục khám phá Hòn Tài. Đến với Hòn Tài, du khách sẽ được chiêm ngưỡng vẻ đẹp lung linh huyền bí của chốn thủy cung với nhiều lọai san hô rực rỡ, lạ mắt mà khó có thể bắt gặp ở một nơi nào khác. 
+            Tại Hòn Tài, bạn có thể thấy sóc mun - loại sóc đặc hữu chỉ có ở Côn Đảo, kỳ đà, tắc kè,…và nhiều loài chim biển, gầm ghì trắng - một loại chim quý hiếm thuộc họ bồ câu, khỉ mặt đỏ - giống khỉ quý đang được nuôi tại Hòn Tài.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Quý khách dùng cơm tối, tự do nghỉ ngơi tại khách sạn hay tự do khám phá Côn Đảo về đêm.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Côn Đảo/Hòn Bảy Cạnh.jpg" alt="Hòn Bảy Cạnh">
+        <div class="caption">Hòn Bảy Cạnh</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Hòn Trác.jpg" alt="Hòn Trác">
+        <div class="caption">Hòn Trác</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Rùa đẻ trứng tại Hòn Bảy Cạnh.jpg" alt="Rùa đẻ trứng">
+        <div class="caption">Rùa đẻ trứng tại Hòn Bảy Cạnh</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Sóc mun tại Côn Đảo.jpg" alt="Sóc mun">
+        <div class="caption">Sóc mun tại Côn Đảo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 4 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Côn Đảo/Khung cảnh bãi biển đẹp tại Côn Đảo.jpg" alt="Bãi biển Côn Đảo">
+        <div class="caption">Khung cảnh bãi biển đẹp tại Côn Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Ngắm hoàng hôn tại Côn Đảo.jpg" alt="Hoàng hôn tại Côn Đảo">
+        <div class="caption">Ngắm hoàng hôn tại Côn Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Cua mặt trăng - Đặc sản Côn Đảo.jpg" alt="Cua Mặt Trăng">
+        <div class="caption">Cua mặt trăng - Đặc sản Côn Đảo</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Côn Đảo/Mứt hạt bàng - Đặc sản Côn Đảo.jpg" alt="Mứt hạt bàng">
+        <div class="caption">Mứt hạt bàng - Món ăn đặc biệt tại Côn Đảo</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 4: côn Đảo - TPHCM</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Tự do đi chợ mua sắm hoặc nghỉ ngơi trong khách sạn hay tắm biển.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Quý khách trả phòng. Đến giờ xe đưa quý khách ra sân bay Côn Đảo HDV làm thủ tục check-in.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Về đến TPHCM kết thúc chuyến tham quan tour du lịch Côn Đảo 4 ngày 3 đêm. HDV VietWander chia tay quý khách và hẹn gặp lại.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Phần lưu ý về giá tour-->
+  <div class="note-container">
+  <h2>Lưu ý:</h2>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+    <li>Vé máy bay khứ hồi TPHCM - Côn Đảo</li>
+    <li>Khách sạn theo tiêu chuẩn 3 sao: 2 hoặc 3 người/phòng</li>
+    <li>Xe ôtô máy lạnh đưa rước sân bay Côn Đảo</li>
+    <li>Vé tham quan theo chương trình Tàu</li>
+    <li>Cano khám phá Vịnh Côn Sơn và tham quan Hòn Bảy Cạnh hoặc Hòn Tài Kính lặn, ống thở snorkel, áo phao</li>
+    <li>Ăn uống:
+    <br>- 03 bữa ăn sáng
+    <br>- 06 bữa ăn chính trị giá 130.000 Đ/khách/bữa</li>
+    <li>Hướng dẫn viên nhiệt tình chu đáo nhiệt tình.</li>
+    <li>Nước khoáng 2 chai/người/ngày.</li>
+    <li> Bảo hiểm mức bồi thường tối đa 10.000.000 VNĐ/khách.</li>
+  </div>
+
+  <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+  </div>
+  <div class="note-content">
+    <ul>
+    <li>Thuế VAT</li>
+    <li>Nghỉ phòng đơn, đồ uống, chi phí cá nhân và chi phí khác không có trong chương trình.</li>
+    <li>Điện thoại, giặt ủi trong khách sạn.</li>
+    <li>Tiền bồi dưỡng cho HDV và Lái xe. Phụ phí với người Nước ngoài - Việt Kiều.</li>
+    </ul>
+    </div>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+    <li>Trẻ em từ 10 tuổi trở lên: Tính 100% giá tour.</li>
+    <li>Trẻ em từ 05 - 09 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+    <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour (Vé máy bay theo quy định hãng hàng không).</li>
+    </ul>
+    </div>
+  </div>
+  
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/An Giang - Cần Thơ/Rừng tràm Trà Sư nhìn từ trên cao.jpg" alt="An Giang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tour An Giang - Cần Thơ 2N2Đ</a></h3>
+          <p>Mang trong mình vẻ đẹp khung cảnh sông nước hữu tình và những nét đẹp văn hóa...</p>
+          <p class="readmore"><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/An Giang - Cần Thơ/Slideshow (1).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (2).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (3).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Long An - Đồng Tháp - Châu Đốc/Vẻ đẹp làng nổi Tân Lập từ trên cao.jpg" alt="Long An" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour TPHCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ.html">Tour TP.HCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ</a></h3>
+          <p>Long An, Đồng Tháp và Châu Đốc là những điểm đến hấp dẫn trong hành trình...</p>
+          <p class="readmore"><a href="Tour TPHCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Làng hoa Sa Đéc.jpg" alt="">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Slideshow (2).jpg" alt="">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Slideshow (4).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+          <img src="images/Vũng Tàu/Đảo Long Sơn.jpg" alt="Vũng Tàu" class="main-image">
+          <div class="tour-info">
+            <h3><a href="Tour TPHCM - Vũng Tàu 2N1Đ.html">Tour TP.HCM - Vũng Tàu 2N1Đ</a></h3>
+            <p>Vũng Tàu là điểm lựa chọn nhiều vì rất gần với TP.HCM,...</p>
+            <p class="readmore"><a href="Tour TPHCM - Vũng Tàu 2N1Đ.html">Tìm hiểu thêm</a></p>
+            <div class="small-images">
+              <img src="images/Vũng Tàu/Bãi Sau Vũng Tàu.jpg" alt="">
+              <img src="images/Vũng Tàu/Đồi cừu Suối Nghệ.jpg" alt="">
+              <img src="images/Vũng Tàu/Hải sản Vũng Tàu.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>

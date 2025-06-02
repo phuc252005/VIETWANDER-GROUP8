@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (1).jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (2).jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (3).jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Slideshow (4).jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Du lịch miền Tây<br>Sóc Trăng - Bạc Liêu - Cà Mau từ Hà Nội</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Sóc Trăng - Bạc Liêu - Cà Mau -Hà Nội</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 4 ngày 3 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe du lịch & Máy bay</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">6.200.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>7.000.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Sóc Trăng - Bạc Liêu - Cà Mau là những điểm đến hấp dẫn trong hành trình khám phá Nam Bộ. 
+        Với sự kết hợp độc đáo giữa vẻ đẹp thiên nhiên, văn hóa truyền thống và ẩm thực đặc sắc, nơi đây mang đến cho du khách những trải nghiệm khó quên. 
+        Hãy cùng đồng hành cùng VietWander để khám phá tour du lịch miền Tây 4 ngày 3 đêm nhé!
+      </b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Sóc Trăng - Bạc Liêu - Cà Mau/Đất\ Mũi\ Cà\ Mau\ -\ Điểm\ cực\ Nam\ của\ Tổ\ Quốc.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Sóc Trăng - Bạc Liêu - Cà Mau</h2>
+        <h3>Miền đất phía Tây Nam Bộ với thiên nhiên đa dạng và ẩm thực phong phú</h3>
+        <p>Sóc Trăng là một trong những thành phố đẹp ở đồng bằng Sông Cửu Long. Đến Sóc Trăng, bạn được chiêm ngưỡng vẻ đẹp các ngôi chùa nổi tiếng độc đáo như chùa Chén Kiểu, chùa Dơi, lễ hội như đua ghe ngo.  
+            Bạc Liêu ngoài có điệu Dạ Cổ Hoài Lang nức tiếng xa gần, Bạc Liêu còn hấp dẫn du khách cả từ những di tích lịch sử, điểm du lịch sinh thái, du lịch tâm linh gắn liền với cảnh quan và các câu chuyện cổ xưa.
+            Cà Mau là vùng đất nơi tận cùng của Tổ Quốc ở phía Nam với những nét đẹp mang tính miệt vườn sông nước đặc trưng của Đồng bằng sông Cửu Long, 
+            bạn được len lỏi trong các kinh rạch của rừng đước, hay tận hưởng bầu không khí trong lành của rừng U Minh Hạ với những cánh rừng tràm bạt ngàn, xanh thẳm hút tầm mắt, tạo nên vẻ đẹp hoang sơ kỳ thú.
+        </p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Sóc Trăng - Bạc Liêu - Cà Mau/Toàn\ cảnh\ chợ\ nổi\ Cái\ Răng\ từ\ trên\ cao.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Sóc Trăng - Bạc Liêu - Cà Mau 4N3Đ</h2>
+        <p>Ngày 1: Hà Nội - Cần Thơ - Mỹ Tho</p>
+        <p>Ngày 2: Cần Thơ - Cà Mau</p>
+        <p>Ngày 3: Cà Mau - Đất Mũi - Bạc Liêu</p>
+        <p>Ngày 4: Bạc Liêu - Cần Thơ - Hà Nội</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Sóc Trăng - Bạc Liêu - Cà Mau 4 ngày 3 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: Hà Nội - Cần Thơ - Mỹ Tho</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe và HDV của Du Lịch Việt đón đoàn tại 167 Giảng Võ đưa đi sân bay Nội Bài. HDV làm thủ tục cho đoàn lên máy bay khởi hành đi Sài Gòn.</li>
+          <li>Đến sân bay Tân Sơn Nhất, HDV đón đoàn đưa đi Cần Thơ.</li>
+          <li>Đoàn khởi hành đi tham quan KDL Tiên Giang.</li>
+          <li>Đến Bến tàu du lịch Mỹ Tho (Số 8 đường 30/04, TP. Mỹ Tho) quý khách tham quan: Du thuyền trên sông Tiền ngắm cảnh Tứ linh: Long – Lân – Quy – Phụng và cảnh sinh hoạt sông nước miền tây.</li>
+          <li>Tham quan làng nuôi cá bè dọc cù lao Thới Sơn.</li>
+          <li>Đến cù lao Thới Sơn: Tham quan trại nuôi ong, 
+            nghe người dân chia sẻ về nghề nuôi ong và cách chiết xuất những sản phẩm từ ong, 
+            thưởng thức trà mật ong và các sản phẩm kẹo mứt của địa phương, hành trình đến thăm nhà dân.</li>
+          <li>Tham quan vườn trái cây</li>
+          <li>Cùng tìm hiểu nét sinh hoạt đặc trưng của văn hóa miệt vườn nam bộ, nghe và giao lưu đờn ca tài tử, thưởng thức trái cây.</li>
+          <li>Khám phá kênh rạch miền tây bằng xuồng chèo len lỏi trong những hàng dừa nước rợp bóng mát, ngắm nhìn cảnh sinh hoạt thường ngày của người dân xứ cù lao.</li>
+          <li>Xuôi dòng sông Tiền đến Cồn Phụng – Bến Tre (Cồn Đạo Dừa) tham quan, chiêm ngưỡng công trình kiến trúc Đạo Dừa, cơ sở sản xuất hàng thủ công mỹ nghệ, 
+            cơ sở sản xuất kẹo dừa – đặc sản nổi tiếng của Bến Tre.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Dùng cơm trưa tại nhà hàng Thủy Tạ Hoa Súng ( thuộc khu du lịch Cồn Phụng)</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Đoàn tiếp tục khởi hành về Cần Thơ.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Đoàn nhận phòng khách sạn, ăn tối tại nhà hàng.</li>
+          <li>Tự do khám phá Cần Thơ về đêm.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Khu du lịch Cù lao Thới Sơn.jpg" alt="Cù lao Thới Sơn">
+        <div class="caption">Khu du lịch Cù lao Thới Sơn</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Du khách tham quan trại nuôi ong tại Cù lao Thới Sơn.jpg" alt="Trại nuôi ong">
+        <div class="caption">Du khách tham quan trại nuôi ong tại Cù lao Thới Sơn</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Khu du lịch Cồn Phụng.jpg" alt="Khu du lịch Cồn Phụng">
+        <div class="caption">Khu du lịch Cồn Phụng</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Kẹo dừa - Đặc sản Bến Tre.jpg" alt="Kẹo dừa">
+        <div class="caption">Kẹo dừa - Đặc sản Bến Tre</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Toàn cảnh chợ nổi Cái Răng từ trên cao.jpg" alt="Chợ nổi Cái Răng">
+        <div class="caption">Toàn cảnh chợ nổi Cái Răng từ trên cao</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Bồng bềnh chợ nổi Cái Răng.jpg" alt="Chợ nổi Cái Răng">
+        <div class="caption">Bồng bềnh chợ nổi Cái Răng</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Chùa Kleng với kiến trúc cổ tự đậm chất Khmer Nam Bộ.jpg" alt="Chùa Kleng">
+        <div class="caption">Chùa Kleng với kiến trúc cổ tự đậm chất Khmer Nam Bộ</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Chùa Mã Tộc (hay còn gọi là chùa dơi).jpg" alt="Chùa Mã Tộc">
+        <div class="caption">Chùa Mã Tộc (hay còn gọi là chùa Wathsêrâytecho Mahatup)</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Cần Thơ - Cà Mau</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Đoàn xuống thuyền đi chợ nổi Cái Răng - một trong những chợ nổi lớn nhất Đồng Bằng Sông Cửu Long.</li>
+          <li>Du khách thử cùng mua bán với khách thương hồ miền Tây.</li>
+          <li>Tìm hiểu cách thức mua bán trên sông rất đặc trưng của người Nam Bộ.</li>
+          <li>Ăn sáng tại khách sạn. Trả phòng. Đoàn khởi hành đi Cà Mau, trên đường đi đoàn tham quan:
+          <br>- Chùa Kleng
+          <br>- Chùa Mã Tộc (hay còn gọi là chùa Wathsêrâytecho Mahatup)
+          </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa tại nhà hàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Đoàn khởi hành về Cà Mau, nhận phòng nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn tối tại nhà hàng</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Cà Mau - Đất Mũi - Bạc Liêu</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe đưa Quý khách đi Năm Căn lên tầu cao tốc đi Đất Mũi. 
+            Đến Đất Mũi, quý khách chụp ảnh lưu niệm tại điểm Cực Nam Tổ Quốc – nơi hàng năm được phù sa bồi đắp thêm từ 80m đến 100m, 
+            tham quan cột mốc toạ độ quốc gia, panô biểu tượng Mũi Cà Mau, 
+            lên vọng lâm đài cao 20m ngắm nhìn toàn cảnh Mũi Cà Mau, thăm mô hình thu nhỏ Làng Rừng. </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa tại nhà hàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tàu cao tốc đưa đoàn trở về Năm Căn.</li>
+          <li>Xe đón đoàn đưa đi Bạc Liêu, ghé Hộ Phòng viếng Nhà thờ Cha Diệp.</li>
+          <li>Đến Bạc Liêu nhận phòng khách sạn. </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn tối tại nhà hàng</li>
+          <li> Quý khách đi dạo và uống cafe ở Khu phố nhà Công tử Bạc Liêu (chi phí tự túc).</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Đất Mũi Cà Mau - Điểm cực Nam của Tổ Quốc.jpg" alt="Đất Mũi">
+        <div class="caption">Đất Mũi Cà Mau - Điểm cực Nam của Tổ Quốc</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Cột mốc tọa độ quốc gia tại Đất Mũi - Cà Mau.jpg" alt="Cột mốc">
+        <div class="caption">Cột mốc tọa độ quốc gia tại Đất Mũi - Cà Mau</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Làng rừng Vồ Dơi.jpg" alt="Làng rừng Vồ Dơi">
+        <div class="caption">Làng rừng Vồ Dơi</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Nhà thờ Cha Diệp tại Bạc Liêu.jpg" alt="Nhà thờ Cha Diệp">
+        <div class="caption">Nhà thờ Cha Diệp tại Bạc Liêu</div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Ngày 4 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Nhà Công tử Bạc Liêu nhìn từ bên ngoài.jpg" alt="Nhà công tử Bạc Liêu">
+        <div class="caption">Nhà Công tử Bạc Liêu nhìn từ bên ngoài</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Bên trong nhà Công tử Bạc Liêu.jpg" alt="Nhà công tử Bạc Liêu">
+        <div class="caption">Bên trong nhà Công tử Bạc Liêu</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Phật Đài Quan Âm Mẹ Nam Hải.jpg" alt="Phật Bà Nam Hải">
+        <div class="caption">/Phật Đài Quan Âm Mẹ Nam Hải</div>
+        </div>
+        <div class="image-item">
+        <img src="images/Sóc Trăng - Bạc Liêu - Cà Mau/Bửu Sơn Tự (hay còn gọi là Chùa Đất Sét).jpg" alt="Chùa Bửu Sơn">
+        <div class="caption">Bửu Sơn Tự (hay còn gọi là Chùa Đất Sét)</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 4: Bạc Liêu - Cần Thơ - Hà Nội</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Ăn sáng, trả phòng khách sạn.</li>
+          <li>Quý khách đi tham quan nhà Công Tử Bạc Liêu, 
+            nghe kể về  gia đình Hội Đồng Trạch và giai thoại đốt tiền của vị công tử Bạc Liêu nổi tiếng một thời.</li>
+          <li>Viếng Phật Bà Nam Hải, dừng chân nghỉ tại Vườn Nhãn, thăm chùa Xiêm Cán, viếng mộ cụ Cao Văn Lầu – người sáng tác ra bài Dạ Cổ Hoài Lang, 
+            tiền đề của nghệ thuật cải lương rất đặc sắc của Nam Bộ.</li>
+          <li>Đoàn đi Sóc Trăng tham quan Chùa Bửu Sơn hay còn gọi là chùa Đất Sét - Ngôi chùa độc nhất vô nhị với hàng ngàn tượng lớn nhỏ bằng đất sét, 
+            cột chùa cũng bằng đất sét. Độc đáo hơn nơi đây còn có 8 cây đèn cầy nặng tổng cộng 1,4 tấn cháy suốt 100 năm.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa tại nhà hàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Đoàn khởi hành về Cần Thơ, xe đưa đoàn ra sân bay đáp chuyến bay (báo sau) về Hà Nội.</li>
+          <li>Về tới sân bay Nội Bài, xe và hướng dẫn viên đón đoàn về điểm hẹn ban đầu trong thành phố. 
+            Chia tay quý khách. Hẹn ngày gặp lại!</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!--Phần lưu ý về giá tour-->
+  <div class="note-container">
+  <h2>Lưu ý:</h2>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+      <li>Vé máy bay Hà Nôi – Cần Thơ – Hà Nội của Vietjetair bao gồm 7kg hành lý xách tay.</li>
+      <li>Xe vận chuyển 29C máy lạnh đời mới theo chương trình; xe đón/tiễn sân bay Nội Bài.</li>
+      <li>Phòng khách sạn đầy đủ tiện nghi tiêu chuẩn 3 sao (02 khách/ phòng, trường hợp lẻ người thì nghỉ 3 khách/phòng).</li>
+      <li>Ăn uống theo chương trình: 3 bữa sáng; 4 bữa trưa; 3 bữa tối. 
+        <br>- Mức ăn chính: 120,000đ/khách/bữa. 
+        <br>- Mức ăn phụ: Ăn sáng buffet tại khách sạn hoặc tiêu chuẩn set menu.</li>
+      <li>Hướng dẫn viên nhiệt tình, kinh nghiệm tiễn, đón sân bay Nội Bài; hướng dẫn viên nhiệt tình kinh nghiệm đón tại Cần Thơ.</li>
+      <li>Cano thăm đất Mũi Cà Mau và thuyền thăm quan Chợ Nổi Cái Răng.</li>
+      <li>Bảo hiểm du lịch suốt tuyến (mức đền bù tối đa 30.000.000đ/khách/vụ).</li>
+      <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+      <li>Nước uống 1 chai/ngày.</li>
+      <li>Quà tặng: Mũ du lịch VietWander.</li>
+    </ul>
+    </div>
+
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+    <li>Phụ phí nghỉ phòng đơn: 900.000đ/khách</li>
+    <li>Đồ uống,  chi phí cá nhân và chi phí khác không có trong chương trình</li>
+    <li>Điện thoại, giặt ủi trong khách sạn.</li>
+    <li>Tiền bồi dưỡng cho HDV và LX.</li>
+    <li>Phụ thu đối với người Nước ngoài - Việt Kiều </li>
+    </ul>
+    </div>
+    <div class="note-header" onclick="toggleDropdown(this)">
+    <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+    <ul>
+    <li>Trẻ em từ 10 tuổi trở lên: Tính 100% giá tour.</li>
+    <li>Trẻ em từ 05 - 09 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+    <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour (Vé máy bay theo quy định hãng hàng không).</li>
+    </ul>
+    </div>
+  </div>
+  
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/An Giang - Cần Thơ/Rừng tràm Trà Sư nhìn từ trên cao.jpg" alt="An Giang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tour An Giang - Cần Thơ 2N2Đ</a></h3>
+          <p>Mang trong mình vẻ đẹp khung cảnh sông nước hữu tình và những nét đẹp văn hóa...</p>
+          <p class="readmore"><a href="Tour TPHCM - An Giang - Cần Thơ 2N2Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/An Giang - Cần Thơ/Slideshow (1).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (2).jpg" alt="">
+            <img src="images/An Giang - Cần Thơ/Slideshow (3).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Long An - Đồng Tháp - Châu Đốc/Vẻ đẹp làng nổi Tân Lập từ trên cao.jpg" alt="Long An" class="main-image">
+        <div class="tour-info">
+          <h3><a href="Tour TPHCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ.html">Tour TP.HCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ</a></h3>
+          <p>Long An, Đồng Tháp và Châu Đốc là những điểm đến hấp dẫn trong hành trình...</p>
+          <p class="readmore"><a href="Tour TPHCM - Long An - Đồng Tháp - Châu Đốc 3N2Đ.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Làng hoa Sa Đéc.jpg" alt="">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Slideshow (2).jpg" alt="">
+            <img src="images/Long An - Đồng Tháp - Châu Đốc/Slideshow (4).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+          <img src="images/Vũng Tàu/Đảo Long Sơn.jpg" alt="Vũng Tàu" class="main-image">
+          <div class="tour-info">
+            <h3><a href="Tour TPHCM - Vũng Tàu 2N1Đ.html">Tour TP.HCM - Vũng Tàu 2N1Đ</a></h3>
+            <p>Vũng Tàu là điểm lựa chọn nhiều vì rất gần với TP.HCM,...</p>
+            <p class="readmore"><a href="Tour TPHCM - Vũng Tàu 2N1Đ.html">Tìm hiểu thêm</a></p>
+            <div class="small-images">
+              <img src="images/Vũng Tàu/Bãi Sau Vũng Tàu.jpg" alt="">
+              <img src="images/Vũng Tàu/Đồi cừu Suối Nghệ.jpg" alt="">
+              <img src="images/Vũng Tàu/Hải sản Vũng Tàu.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>
