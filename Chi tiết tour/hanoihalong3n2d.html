@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Hạ Long - VIETWANDER</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Hà Nội - Hạ Long/halong1.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Hạ Long/halong2.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Hạ Long/halong3.jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Hạ Long/halong4.jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Du lịch Hạ Long<br>Kỳ quan thiên nhiên bậc nhất Việt Nam</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Hạ Long</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 3 ngày 2 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">3.099.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>3.699.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Vịnh Hạ Long – kỳ quan thiên nhiên thế giới được UNESCO công nhận, là điểm đến lý tưởng cho những ai yêu biển, thích khám phá hang động và trải nghiệm vẻ đẹp hùng vĩ của thiên nhiên. Tour du lịch Hà Nội – Hạ Long 3 ngày 2 đêm sẽ đưa bạn khám phá những địa danh nổi tiếng như hang Sửng Sốt, đảo Titop, làng chài, tham gia chèo kayak và thưởng thức hải sản tươi ngon ngay trên vịnh. </b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Hà Nội - Hạ Long/under1.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về vịnh Hạ Long</h2>
+        <h3>Hạ Long - viên ngọc xanh của kỳ quan</h3>
+        <p>Cách Hà Nội khoảng 160km, Hạ Long là một trong những điểm đến nổi bật nhất miền Bắc với hệ thống đảo đá vôi, hang động kỳ thú và mặt biển xanh biếc.
+            Du lịch Hạ Long không chỉ là hành trình chiêm ngưỡng cảnh sắc ngoạn mục mà còn là trải nghiệm văn hóa địa phương, hải sản đặc trưng và các hoạt động giải trí đa dạng như chèo kayak, tắm biển, ngắm bình minh trên vịnh…
+            Đây là điểm đến không thể bỏ qua cho bất kỳ ai yêu vẻ đẹp thiên nhiên và mong muốn tìm chút bình yên giữa sóng nước mênh mông.</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Hà Nội - Hạ Long/under2.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Cát Bà 3N2Đ</h2>
+        <p>Ngày 1: Hà Nội – Hạ Long – Tắm biển Bãi Cháy</p>
+        <p>Ngày 2: Tham quan Vịnh Hạ Long.</p>
+        <p>Ngày 3: Tự do tham quan, mua sắm đặc sản, quay về Hà Nội.</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Hạ Long 3 ngày 2 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: Hà Nội - Hạ Long - Bãi Cháy</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Khởi hành từ Hà Nội lúc 8h00 bằng ô tô du lịch.</li>
+          <li>Dừng chân nghỉ ngơi 30 phút, trên đường cao tốc Hà Nội – Hạ Long.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đến Hạ Long khoảng 11h30, dùng bữa trưa tại nhà hàng.</li>
+          <li>Nhận phòng khách sạn, nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tắm biển tại Bãi Cháy – bãi biển nổi tiếng với cát trắng và nước biển trong xanh.</li>
+          <li>Tự do dạo chơi, chụp ảnh, thư giãn bên bờ biển.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn tối với thực đơn hải sản tươi ngon.</li>
+          <li>Khám phá chợ đêm Hạ Long, dạo chơi khu Sun World hoặc ngắm cầu Bãi Cháy về đêm.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Vịnh Hạ Long nhìn từ trên cao.jpg" alt="Vịnh Hạ Long nhìn từ trên cao">
+          <div class="caption">Vịnh Hạ Long nhìn từ trên cao</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Biển Bãi Cháy.jpg" alt="Biển Bãi Cháy">
+          <div class="caption">Biển Bãi Cháy</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Chợ đêm Hạ Long.jpg" alt="Chợ đêm Hạ Long">
+          <div class="caption">Chợ đêm Hạ Long</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Sunworld Hạ Long.jpg" alt="Sunworld Hạ Long">
+          <div class="caption">Sunworld Hạ Long</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Cảng Hạ Long.jpg" alt="Cảng Hạ Long">
+          <div class="caption">Cảng Hạ Long</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Vịnh Hạ Long.jpg" alt="Vịnh Hạ Long">
+          <div class="caption">Vịnh Hạ Long</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Hang Sửng Sốt.jpg" alt="Hang Sửng Sốt">
+          <div class="caption">Hang Sửng Sốt</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Hạ Long về đêm.jpg" alt="Hạ Long về đêm">
+          <div class="caption">Hạ Long về đêm</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Tham quan vịnh Hạ Long - Hang Sửng Sốt</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Tự túc ăn sáng.</li>
+          <li>8h30: Di chuyển ra cảng, lên tàu du lịch tham quan vịnh Hạ Long.</li>
+          <li>Khám phá Hang Sửng Sốt – hang động nổi tiếng nhất vịnh.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa trên tàu, nghỉ ngơi trên boong ngắm cảnh biển.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Tàu quay về cảng, về lại khách sạn nghỉ ngơi.</li>
+          <li>Tự do dạo phố hoặc tham quan bảo tàng Quảng Ninh (nếu có nhu cầu).</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Ăn tối tại nhà hàng.</li>
+          <li>Dạo biển, tham quan tự do.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Tự do tham quan - Trở về Hà Nội</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Tắm biển sáng sớm</li>
+          <li>Ăn sáng tự túc.</li>
+          <li>Mua sắm đặc sản tại chợ Hạ Long: chả mực, sá sùng khô, mực một nắng...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Ăn trưa và trả phòng khách sạn, 12h30 bắt đầu di chuyển về Hà Nội.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Dự kiến về đến Hà Nội vào khoảng 17h00 – 18h00.</li>
+          <li>Kết thúc chuyến đi.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Đặc sản Hạ Long.jpg" alt="Đặc sản Hạ Long">
+          <div class="caption">Đặc sản Hạ Long</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Hạ Long/Đặc sản Hạ Longg.jpg" alt="Đặc sản Hạ Long">
+          <div class="caption">Đặc sản Hạ Long</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-container">
+      <h2>Lưu ý:</h2>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+          <ul>
+            <li>Xe du lịch đời mới với hệ thống máy lạnh hiện đại, lái xe chuyên nghiệp, văn minh, lịch sự phục vụ theo hành trình.</li>
+          </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+          <ul>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại điểm đón khách ở Hà Nội.</li>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Cửa Lò.</li>
+          </ul> 
+        <li><strong>Lưu trú:</strong></li>
+          <ul>
+            <li>Khách sạn trung tâm tiện nghi sang trọng tivi, điều hoà, phòng khép kín, 2-3 người/phòng.</li>
+          </ul>
+        <li><strong>Ăn uống:</strong></li>
+          <ul>
+            <li>Ăn sáng: 03 bữa điểm tâm sáng (1 tô bún, phở, cháo ngao…+ đồ uống).</li>
+            <li>Ăn chính: 06 bữa với thực đơn địa phương phong phú, đổi món theo ngày.</li>
+          </ul>
+        <li><strong>Tham quan:</strong></li>
+          <ul>
+            <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+          </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 10.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
+        </ul>
+      </div>
+
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+          <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+          <li>Điện thoại, giặt ủi,...trong khách sạn.</li>
+          <li>Phụ thu phòng đơn, phụ thu đối với người Nước ngoài - Việt Kiều và các khoản phụ thu khác (nếu có).</li>
+          <li>Phụ thu cuối tuần 300.000đ/khách.</li>
+          <li>Tip cho tài xế và hướng dẫn viên.</li>
+        </ul>
+      </div>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Trẻ em từ 12 tuổi trở lên: Tính 100% giá tour.</li>
+          <li>Trẻ em từ 05 - 11 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+          <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour.</li>
+        </ul>
+      </div>  
+  </div>
+   
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/Hà Nội/hanoi2.jpg" alt="Hà Nội" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoitrongngay.html">Tour Hà Nội trong ngày</a></h3>
+          <p>Nơi lưu giữ những giá trị văn hóa, lịch sử và nét đẹp cổ kính hòa quyện cùng nhịp sống hiện đại...</p>
+          <p class="readmore"><a href="hanoitrongngay.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội/Giếng Thiên Quang.jpg" alt="">
+            <img src="images/Hà Nội/Bảo tàng Hồ Chí Minh.jpg" alt="">
+            <img src="images/Hà Nội/Lăng Chủ tịch Hồ Chí Minh.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Hà Nội - Tam Đảo/tamdao4.jpg" alt="Tam Đảo" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoitamdao2n1d.html">Tour Hà Nội - Tam Đảo 2N1Đ</a></h3>
+          <p>“Đà Lạt thu nhỏ” của miền Bắc, nổi bật với khí hậu mát mẻ quanh năm, cảnh sắc thơ mộng và những đám mây bồng bềnh ôm trọn núi rừng...</p>
+          <p class="readmore"><a href="hanoitamdao2n1d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Tam Đảo/Quảng trường trung tâm.jpg" alt="">
+            <img src="images/Hà Nội - Tam Đảo/tamdao2.jpg" alt="">
+            <img src="images/Hà Nội - Tam Đảo/under2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+        <img src="images/Hà Nội - Sa Pa/đỉnh fansipan.jpg" alt="Sa Pa" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoisapa3n2d.html">Tour Hà Nội - Sa Pa 3N2Đ</a></h3>
+          <p>Thị trấn trong sương nơi núi rừng Tây Bắc, mê hoặc du khách với cảnh sắc hùng vĩ, bản làng mộc mạc...</p>
+          <p class="readmore"><a href="hanoisapa3n2d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Sa Pa/cáp treo fsp.jpg" alt="">
+            <img src="images/Hà Nội - Sa Pa/sapa1.jpg" alt="">
+            <img src="images/Hà Nội - Sa Pa/núi hàm rồng.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>

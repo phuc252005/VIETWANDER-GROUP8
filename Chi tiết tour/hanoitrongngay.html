@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Hà Nội - VIETWANDER</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Hà Nội/hanoi2.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội/hanoi1.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội/hanoi3.jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội/hanoi4.jpeg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour Hà Nội trong ngày<br>Khám phá Thủ đô nghìn năm văn hiến</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Hà Nội</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 1 ngày</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">699.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>769.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Chỉ trong một ngày, bạn sẽ có cơ hội khám phá những công trình biểu tượng như Lăng Bác, Văn Miếu – Quốc Tử Giám, Hồ Gươm… thưởng thức tinh hoa ẩm thực Hà Nội và cảm nhận nét đẹp rất riêng của phố cổ. Hành trình tuy ngắn nhưng đủ để chạm vào hồn cốt Thủ đô – vừa cổ kính, vừa hiện đại, đậm đà bản sắc.</b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Hà Nội/under1.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về thủ đô Hà Nội</h2>
+        <h3>Hà Nội - nơi lưu giữ những dấu ấn lịch sử, văn hóa và nhịp sống bình dị của người Tràng An</h3>
+        <p>Hà Nội – trái tim của Việt Nam, là nơi giao thoa giữa nét cổ kính ngàn năm và nhịp sống hiện đại sôi động.
+            Với những con phố nhỏ rêu phong, hồ nước thơ mộng, di tích lịch sử và nền ẩm thực tinh tế, Hà Nội mang đến cho du khách cảm giác vừa thân quen vừa mới mẻ.</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Hà Nội/under2.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour khám phá Hà Nội trong ngày</h2>
+        <p>Địa điểm 1: Lăng Chủ tịch Hồ Chí Minh</p>
+        <p>Địa điểm 2: Văn Miếu Quốc Tử Giám</p>
+        <p>Địa điểm 3: Nhà tù Hỏa Lò</p>
+        <p>Địa điểm 4: Hoàng thành Thăng Long</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Hà Nội trong ngày</h2>
+    <!-- Địa điểm 1: Lăng Chủ tịch Hồ Chí Minh -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Địa điểm 1: Lăng Chủ tịch Hồ Chí Minh</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Thời gian tham quan: 7h30-9h30</strong><br>
+          <li>7h30: xe đón tại nhà thờ lớn Hà Nội, di chuyển tới Lăng.</li>
+          <li>Dự kiến đến Lăng Bác lúc 8h00.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Giới thiệu:</strong><br>
+          <li>Đây là nơi yên nghỉ của Chủ tịch Hồ Chí Minh – vị cha già kính yêu của dân tộc.</li>
+          <li>Công trình được xây dựng với kiến trúc kiên cố, mang đậm phong cách Xô Viết, tọa lạc giữa Quảng trường Ba Đình.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Hoạt động:</strong><br>
+          <li>Xếp hàng vào viếng Lăng khoảng 30–45 phút.</li>
+          <li>Tham quan Quảng trường Ba Đình, Phủ Chủ tịch, Nhà sàn Bác Hồ, Ao cá Bác Hồ, Bảo tàng Hồ Chí Minh.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Lưu ý:</strong><br>
+          <li>Ăn mặc lịch sự, không mặc quần short, áo ba lỗ.</li>
+          <li>Giữ trật tự, đi theo sự hướng dẫn của trưởng đoàn, không chụp ảnh bên trong Lăng.</li>
+          <li>Nên mang theo giấy tờ tùy thân (CMND/CCCD).</li>
+          <li>Lăng mở cửa từ 07h30 – 10h30 (thứ Ba đến Chủ Nhật, trừ thứ Hai và thứ Sáu).</li>
+          <li>Du khách nước ngoài cần mua vé cho các khu di tích ngoài Lăng.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội/Lăng Chủ tịch Hồ Chí Minh.jpg" alt="Lăng Chủ tịch Hồ Chí Minh">
+          <div class="caption">Lăng Chủ tịch Hồ Chí Minh</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Quảng trường Ba Đình.jpg" alt="Quảng trường Ba Đình">
+          <div class="caption">Quảng trường Ba Đình</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Nhà sàn Bác Hồ.jpg" alt="Nhà sàn Bác Hồ">
+          <div class="caption">Nhà sàn Bác Hồ</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Bảo tàng Hồ Chí Minh.jpg" alt="Bảo tàng Hồ Chí Minh">
+          <div class="caption">Bảo tàng Hồ Chí Minh</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Địa điểm 2: Văn miếu Quốc Tử Giám -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội/Khuê Văn Các.jpg" alt="Khuê Văn Các">
+          <div class="caption">Khuê Văn Các</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/cầu thê húc.jpg" alt="Cầu Thê Húc">
+          <div class="caption">Cầu Thê Húc</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Giếng Thiên Quang.jpg" alt="Giếng Thiên Quang">
+          <div class="caption">Giếng Thiên Quang</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Bia tiến sĩ.jpg" alt="Bia tiến sĩ">
+          <div class="caption">Bia tiến sĩ</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Địa điểm 2: Văn miếu Quốc Tử Giám</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Thời gian tham quan: 10h00-11h15</strong><br>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Giới thiệu:</strong><br>
+          <li>Văn Miếu - trường đại học đầu tiên của Việt Nam, được xây dựng từ năm 1070 dưới thời vua Lý Thánh Tông.</li>
+          <li>Đây từng là nơi đào tạo nhân tài cho triều đình phong kiến, với hệ thống bia tiến sĩ khắc tên các vị đỗ đại khoa từ thế kỷ XV.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Hoạt động:</strong><br>
+          <li>Dạo quanh các khu vực cổ kính như Khuê Văn Các, giếng Thiên Quang, nhà bia.</li>
+          <li>Tìm hiểu về lễ xướng danh, khoa cử thời phong kiến.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Lưu ý:</strong><br>
+          <li>Do khuôn viên di tích rất rộng, quý khách vui lòng tập trung đi theo đoàn du lịch.</li>
+        </ul>
+        <br>
+        <ul><strong><i class="fa-solid fa-cookie"></i> 11h30-13h00: ĂN TRƯA VÀ NGHỈ NGƠI TẠI NHÀ HÀNG</strong><br></ul>
+      </div>
+    </div>
+
+    <!-- Địa điểm 3: Nhà tù Hỏa Lò -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Địa điểm 3: Nhà tù Hỏa Lò</h3>
+          <ul><strong><i class="fa-solid fa-landmark"></i> Thời gian tham quan: 13h30-14h35</strong><br>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Giới thiệu:</strong><br>
+          <li>Được xây dựng bởi thực dân Pháp cuối thế kỷ XIX, nơi đây từng là “địa ngục trần gian” giam giữ những người yêu nước.</li>
+          <li>Sau này, nhà tù trở thành nơi lưu giữ ký ức chiến tranh, đặc biệt trong giai đoạn chống Mỹ.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Hoạt động:</strong><br>
+          <li>Tham quan phòng giam, trại biệt lập, khu xử án.</li>
+          <li>Xem phim tài liệu, ảnh lưu trữ, và hiện vật về cuộc sống tù nhân.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Lưu ý:</strong><br>
+          <li>Không phù hợp với trẻ nhỏ do một số hình ảnh nặng nề.</li>
+          <li>Giữ không khí nghiêm trang, tránh nói cười lớn.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội/Cảnh bên ngoài khu di tích.jpg" alt="Cảnh bên ngoài khu di tích">
+          <div class="caption">Cảnh bên ngoài khu di tích</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Khu giam giữ bên trong.jpg" alt="Khu giam giữ bên trong">
+          <div class="caption">Khu giam giữ bên trong</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Hình ảnh máy chém khổng lồ.jpg" alt="Hình ảnh máy chém khổng lồ">
+          <div class="caption">Hình ảnh máy chém khổng lồ</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Bên trong ngục tối.png" alt="Bên trong ngục tối">
+          <div class="caption">Bên trong ngục tối</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Địa điểm 4: Hoàng thành Thăng Long -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội/Hoàng thành Thăng Long.jpg" alt="Hoàng thành Thăng Long">
+          <div class="caption">Hoàng thành Thăng Long</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Điện Kính Thiên.jpg" alt="Điện Kính Thiên">
+          <div class="caption">Điện Kính Thiên</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Hầm D67.jpg" alt="Hầm D67">
+          <div class="caption">Hầm D67</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội/Chùa Một Cột.jpg" alt="Chùa Một Cột">
+          <div class="caption">Chùa Một Cột</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Địa điểm 4: Hoàng thành Thăng Long</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Thời gian tham quan: 15h00-16h00</strong><br>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Giới thiệu:</strong><br>
+          <li>Hoàng Thành Thăng Long là một trong những quần thể di tích lịch sử – văn hóa quan trọng bậc nhất của Hà Nội, được UNESCO công nhận là Di sản Văn hóa Thế giới năm 2010. </li>
+          <li> Nơi đây từng là trung tâm quyền lực chính trị, quân sự của nhiều triều đại Việt Nam như Lý, Trần, Lê, Nguyễn suốt hơn 1.000 năm lịch sử. </li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Hoạt động:</strong><br>
+          <li>Khám phá Đoan Môn, Điện Kính Thiên, hầm D67 – nơi làm việc của Bộ Quốc phòng trong thời kỳ kháng chiến chống Mỹ.</li>
+          <li>Chụp ảnh tại Cột cờ Hà Nội, lầu vọng nguyệt cổ kính.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Lưu ý:</strong><br>
+          <li>Khuôn viên rộng, nên đi giày thoải mái.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-container">
+      <h2>Lưu ý:</h2>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+          <ul>
+            <li>Xe du lịch đời mới với hệ thống máy lạnh hiện đại, lái xe chuyên nghiệp, văn minh, lịch sự phục vụ theo hành trình.</li>
+          </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+          <ul>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại điểm đón khách ở Hà Nội.</li>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Cửa Lò.</li>
+          </ul> 
+        <li><strong>Lưu trú:</strong></li>
+          <ul>
+            <li>Khách sạn trung tâm tiện nghi sang trọng tivi, điều hoà, phòng khép kín, 2-3 người/phòng.</li>
+          </ul>
+        <li><strong>Ăn uống: 01 bữa trưa tại nhà hàng KOTO – 59 Văn Miếu. Thực đơn: </strong></li>
+          <ul>
+            <li>Món khai vị: nem rán, nộm đu đủ bò khô.</li>
+            <li>Món chính: cá kho tộ, thịt ba chỉ rang cháy cạnh, rau muống xào tỏi.</li>
+            <li>Tráng miệng: chè sen long nhãn hoặc trái cây theo mùa.</li>
+          </ul>
+        <li><strong>Tham quan:</strong></li>
+          <ul>
+            <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+          </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 10.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
+        </ul>
+      </div>
+
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+          <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+          <li>Phụ thu phòng đơn, phụ thu đối với người Nước ngoài - Việt Kiều và các khoản phụ thu khác (nếu có).</li>
+          <li>Phụ thu cuối tuần 300.000đ/khách.</li>
+          <li>Tip cho tài xế và hướng dẫn viên.</li>
+        </ul>
+      </div>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Trẻ em từ 12 tuổi trở lên: Tính 100% giá tour.</li>
+          <li>Trẻ em từ 05 - 11 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+          <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour.</li>
+        </ul>
+      </div>  
+  </div>
+   
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/Hà Nội - Cát Bà/Vịnh Lan Hạ.jpg" alt="Cát Bà" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoicatba3n2d.html">Tour Hà Nội - Cát Bà 3N2Đ</a></h3>
+          <p>Hòn ngọc xanh của vịnh Bắc Bộ, nổi bật với biển xanh cát trắng, rừng quốc gia hoang sơ và không khí trong lành...</p>
+          <p class="readmore"><a href="hanoicatba3n2d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Cát Bà/catba1.jpg" alt="">
+            <img src="images/Hà Nội - Cát Bà/under1.jpg" alt="">
+            <img src="images/Hà Nội - Cát Bà/Chèo kayak tại Hang Sáng - Tối.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Hà Nội - Mộc Châu/mocchau1.jpg" alt="Hội An" class="main-image">
+        <div class="tour-info">
+          <h3><a href="tphcmdananghuehoian5n4d.html">Tour Hà Nội - Mộc Châu 2N1Đ</a></h3>
+          <p>Cao nguyên thơ mộng, nơi hòa quyện giữa thiên nhiên tươi đẹp và cuộc sống thanh bình...</p>
+          <p class="readmore"><a href="hanoimocchau2n1d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Mộc Châu/mocchau2.jpg" alt="">
+            <img src="images/Hà Nội - Mộc Châu/mocchau3.jpg" alt="">
+            <img src="images/Hà Nội - Mộc Châu/mocchau4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+        <img src="images/Hà Nội - Tam Đảo/Quảng trường trung tâm.jpg" alt="Tam Đảo" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoitamdao2n1d.html">Tour Hà Nội - Tam Đảo 2N1Đ</a></h3>
+          <p>“Đà Lạt thu nhỏ” của miền Bắc, nổi bật với khí hậu mát mẻ quanh năm, cảnh sắc thơ mộng ...</p>
+          <p class="readmore"><a href="hanoitamdao2n1d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Tam Đảo/tamdao1.jpg" alt="">
+            <img src="images/Hà Nội - Tam Đảo/under1.jpg" alt="">
+            <img src="images/Hà Nội - Tam Đảo/Tam Đảo về đêm.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>
