@@ -1,3 +1,17 @@
+// toast
+function showToast(message, type = 'success') {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerText = message;
+    container.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 4000);
+}
+
+
 // Hàm kiểm tra định dạng email hoặc số điện thoại
 function validateContact(contact) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,6 +32,7 @@ function handleSignInForm() {
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
+
         const contact = document.getElementById('contact').value.trim();
         const password = document.getElementById('password').value.trim();
         let errors = [];
@@ -31,17 +46,25 @@ function handleSignInForm() {
         if (!password) {
             errors.push('Vui lòng nhập mật khẩu.');
         } else if (!validatePassword(password)) {
-            errors.push('Mật khẩu phải có ít nhất 7 ký tự, bao gồm 1 chữ in hoa và 1 ký tự đặc biệt.');
+            errors.push('Mật khẩu không hợp lệ. Phải có ít nhất 7 ký tự, 1 chữ in hoa và 1 ký tự đặc biệt.');
         }
 
         if (errors.length > 0) {
-            alert('Lỗi:\n' + errors.join('\n'));
-        } else {
+            alert('Đăng nhập thất bại:\n' + errors.join('\n'));
+            return;
+        }
+
+        // Giả sử kiểm tra thành công — có thể thay bằng gọi API thực tế
+        const isLoginSuccess = true; // Giả lập
+        if (isLoginSuccess) {
             alert('Đăng nhập thành công!');
-            window.location.href = 'home.html';
+            window.location.href = 'Trang Chủ/trangchu.html';
+        } else {
+            alert('Thông tin đăng nhập không đúng. Vui lòng thử lại.');
         }
     });
 }
+
 
 // Xử lý form đăng ký
 function handleSignUpForm() {
@@ -52,12 +75,19 @@ function handleSignUpForm() {
         e.preventDefault();
         const fullName = document.getElementById('full-name').value.trim();
         const contact = document.getElementById('contact').value.trim();
-        const idNumber = document.getElementById('id-number').value.trim();
+        const idNumber = document.getElementById('id-number') ? document.getElementById('id-number').value.trim() : '';
         const address = document.getElementById('address').value.trim();
         const password = document.getElementById('password').value.trim();
         const confirmPassword = document.getElementById('confirm-password').value.trim();
         const terms = document.getElementById('terms').checked;
+
         let errors = [];
+
+        // Kiểm tra toàn bộ form có trống không
+        if (!fullName && !contact && !address && !password && !confirmPassword) {
+            alert('Vui lòng nhập đầy đủ thông tin.');
+            return;
+        }
 
         if (!terms) {
             alert('Vui lòng đồng ý với chính sách và điều khoản của chúng tôi.');
@@ -65,40 +95,38 @@ function handleSignUpForm() {
         }
 
         if (!fullName) {
-            errors.push('Họ và tên không được để trống.');
+            errors.push('Vui lòng nhập Họ và Tên.');
         }
 
         if (!contact) {
-            errors.push('Số điện thoại hoặc email không được để trống.');
+            errors.push('Vui lòng nhập Số điện thoại hoặc Email.');
         } else if (!validateContact(contact)) {
             errors.push('Số điện thoại hoặc email không hợp lệ.');
         }
 
-        if (!idNumber) {
-            errors.push('CCCD không được để trống.');
-        } else if (!/^\d{12}$/.test(idNumber)) {
-            errors.push('CCCD phải có đúng 12 chữ số.');
-        }
-
         if (!address) {
-            errors.push('Địa chỉ không được để trống.');
+            errors.push('Vui lòng nhập Địa chỉ.');
         }
 
         if (!password) {
-            errors.push('Mật khẩu không được để trống.');
+            errors.push('Vui lòng nhập Mật khẩu.');
         } else if (!validatePassword(password)) {
             errors.push('Mật khẩu phải có ít nhất 7 ký tự, bao gồm 1 chữ in hoa và 1 ký tự đặc biệt.');
         }
 
-        if (password !== confirmPassword) {
+        if (!confirmPassword) {
+            errors.push('Vui lòng xác nhận lại mật khẩu.');
+        } else if (password && confirmPassword !== password) {
             errors.push('Mật khẩu xác nhận không khớp.');
         }
 
         if (errors.length > 0) {
             alert('Lỗi:\n' + errors.join('\n'));
         } else {
-            alert('Đăng ký thành công!');
-            window.location.href = 'signin.html';
+            const confirmation = confirm('Tạo tài khoản thành công!\n\nChuyển đến trang đăng nhập?');
+            if (confirmation) {
+                window.location.href = 'signin.html';
+            }
         }
     });
 }
@@ -108,3 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
     handleSignInForm();
     handleSignUpForm();
 });
+
+if (errors.length > 0) {
+    alert('Lỗi:\n' + errors.join('\n'));
+} else {
+    alert('Đăng ký thành công!');
+    window.location.href = 'signin.html';
+}

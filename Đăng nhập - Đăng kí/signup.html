@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <div class="background-image"></div>
+<div class="background-image" style="background-image: url('images/tropical-island-background.png'); background-size: cover; background-position: center;"></div>
         </div>
         <div class="right-section">
             <h1 class="title">ĐĂNG KÝ</h1>
@@ -41,32 +41,13 @@
                     <input type="checkbox" id="terms" name="terms" />
                     <label for="terms">Đồng ý với chính sách và điều khoản của chúng tôi</label>
                 </div>
-                <button type="submit" class="submit-button"><a href="signin.html">Đăng kí</a></button>
+                 <button type="submit" class="submit-button">Đăng ký</button>
             </form>
         </div>
     </div>
-    <script src="js/auth.js"></script>
-   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/68065598b75de5190b8395e4/1ipcbsna6';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-<script type="text/javascript">
-Tawk_API.onLoad = function(){
-    Tawk_API.showWidget();
-};
-Tawk_API.onChatEnded = function(){
-    Tawk_API.showWidget();
-};
-</script>
+    <script src="auth.js"></script>
+    <div id="toast-container"></div>
+
 </body>
 
 </html>
