@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Cửa Lò - VIETWANDER</title>
+    <title>Tour Hà Nội Cửa Lò - VIETWANDER</title>
     <link rel="stylesheet" href="chitiet.css"> 
     <script src="chitiet.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -40,7 +40,7 @@
         </li>
         <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
         <li><a href="#">LIÊN HỆ</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+        <li><a href="Giỏ hàng.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
       </ul>
       <div class="search-container">
         <input type="text" placeholder="Tìm kiếm..." class="search-input">
@@ -114,6 +114,7 @@
     <h2>Lịch trình chi tiết tour du lịch Cửa Lò 3 ngày 2 đêm</h2>
     <!-- Ngày 1 -->
     <div class="day-section">
+      <!--một bên là văn bản lịch trình-->
       <div class="day-box blue-box">
         <h3>Ngày 1: Hà Nội - Cửa Lò - Đảo Lan Châu</h3>
         <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
@@ -135,6 +136,7 @@
           <li>Tự do tham quan Cửa Lò hoặc tham gia chương trình câu mực trên biển. Nghỉ đêm tại khách sạn. </li>
         </ul>
       </div>
+      <!--một bên là hình ảnh cho tour-->
       <div class="image-grid">
         <div class="image-item">
           <img src="images/Hà Nội - Cửa Lò/đảo Lan Châu.png" alt="đảo Lan Châu">
@@ -154,8 +156,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Ngày 2 -->
+    <!-- Ngày 2 (tương tự ngày 1) -->
     <div class="day-section">
       <div class="image-grid">
         <div class="image-item">
@@ -196,7 +197,6 @@
         </ul>
       </div>
     </div>
-
     <!-- Ngày 3 -->
     <div class="day-section">
       <div class="day-box blue-box">
@@ -238,8 +238,10 @@
     </div>
   </div>
 
+  <!--lưu ý về giá tour-->
   <div class="note-container">
       <h2>Lưu ý:</h2>
+      <!--nhấn dấu để mở rộng văn bản-->
       <div class="note-header" onclick="toggleDropdown(this)">
         <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
       </div>
@@ -271,7 +273,6 @@
         <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
         </ul>
       </div>
-
       <div class="note-header" onclick="toggleDropdown(this)">
         <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
       </div>
@@ -317,35 +318,35 @@
         <label for="phone">Số điện thoại</label>
         <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
       </div>
-        <div class="form-group inline">
-            <div>
-              <label for="date">Ngày đi</label>
-              <input type="date" id="date" name="date">
-            </div>
-            <div>
-              <label for="date">Ngày về</label>
-              <input type="date" id="date" name="date">
-            </div>
-            <div>
-              <label for="people">Số lượng người</label>
-              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
-            </div>
+      <div class="form-group inline">
+        <div>
+          <label for="date">Ngày đi</label>
+          <input type="date" id="date" name="date">
         </div>
-        <div class="form-group">
-          <label for="note">Lưu ý</label>
-          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        <div>
+          <label for="date">Ngày về</label>
+          <input type="date" id="date" name="date">
         </div>
-        <div class="form-footer">
-          <div class="checkbox-group">
-            <input type="checkbox" id="confirmation" name="confirmation">
-            <label for="confirmation">Xác nhận thông tin</label>
-          </div>
-          <button type="submit">Yêu cầu tư vấn</button>
+        <div>
+          <label for="people">Số lượng người</label>
+          <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
         </div>
+      </div>
+      <div class="form-group">
+        <label for="note">Lưu ý</label>
+        <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+      </div>
+      <div class="form-footer">
+        <div class="checkbox-group">
+          <input type="checkbox" id="confirmation" name="confirmation">
+          <label for="confirmation">Xác nhận thông tin</label>
+        </div>
+        <button type="submit">Yêu cầu tư vấn</button>
+      </div>
     </form>
   </div>
 
-  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <!--phần mở rộng-->
   <div class="seemore-container">
     <!-- Bên trái: Có thể bạn quan tâm -->
     <div class="main-content">
@@ -417,6 +418,7 @@
       </div>
     </div>
     <div class="footer-main">
+      <!--cột 1-->
       <div class="footer-column">
         <h3>Liên hệ cho chúng tôi</h3>
         <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
@@ -424,7 +426,7 @@
         <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
         <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
       </div>
-
+      <!--cột 1-->
       <div class="footer-column">
         <h3>Văn phòng</h3>
         <ul>
@@ -432,7 +434,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </ul>
       </div>
-
+      <!--cột 1-->
       <div class="footer-column">
         <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
         <ul>
@@ -442,7 +444,7 @@
           <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
         </ul>
       </div>
-
+      <!--cột 1-->
       <div class="footer-column">
         <h3>Thanh toán an toàn</h3>
         <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
@@ -458,6 +460,7 @@
       <p>&copy; 2025 VietWander.com. All rights reserved</p>
     </div>
   </footer>
+  
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
