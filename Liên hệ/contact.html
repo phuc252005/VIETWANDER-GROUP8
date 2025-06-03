@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - VIETWANDER</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <script src="contact.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="home.html">
+          <img src="images/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="intro.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a>DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <div class="banner-image">
+    <img src="images/banner.jpg" alt="Liên hệ Vietwander">
+  </div>
+
+  <!--Thông tin liên hệ-->
+  <div class="info-container">
+    <h2>Thông tin liên hệ</h2>
+    <div class="info-wrapper">
+      <!--Trụ sở chính-->
+      <div class="info-left">
+        <h3>TRỤ SỞ CHÍNH</h3>
+        <p><i class="fa-solid fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, phường Quang Trung, Quận Đống Đa, Hà Nội</p>
+        <p><i class="fa-solid fa-phone-alt"></i> Hotline: 1800 110 246 (8h00 – 20h00)</p>
+        <p><i class="fa-solid fa-phone-alt"></i> Điện thoại: 0123456789</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: hotro@vietwander.vn</p>
+        <p><i class="fa-solid fa-facebook"></i> Facebook: <a href="#">fb.com/vietwander</a></p>
+      </div>
+    
+      <!--Chi nhánh-->
+      <div class="info-right">
+        <h3>CHI NHÁNH ĐÀ NẴNG</h3>
+        <p><i class="fa-solid fa-map-marked-alt"></i> Địa chỉ: 02 An Trung 2, phường An Hải, quận Sơn Trà, Đà Nẵng</p>
+        <p><i class="fa-solid fa-phone-alt"></i> Điện thoại: 0236 123 456</p>
+        <br>
+        <h3>CHI NHÁNH TP. HỒ CHÍ MINH</h3>
+        <p><i class="fa-solid fa-map-marked-alt"></i> Địa chỉ: Số 6 Đường Mạc Đĩnh Chi, Phường Bến Nghé, Quận 1, TP.HCM</p>
+        <p><i class="fa-solid fa-phone-alt"></i> Điện thoại: 028 1234 5678</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Form & FAQ-->
+  <div class="contact-container">
+    <!--Form điền thông tin-->
+    <div class="contact-form">
+      <h2>Gửi yêu cầu trực tuyến</h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Họ và tên *</label>
+          <input type="text" name="name" id="name" placeholder="Họ và tên" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại *</label>
+          <input type="tel" name="phone" id="phone" placeholder="Số điện thoại" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="contact">Nội dung cần tư vấn *</label>
+          <textarea name="message" id="message" rows="5" placeholder="Nội dung cần tư vấn" required></textarea>
+        </div>
+        
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree" >* Tôi đồng ý với chính sách bảo mật</label>
+          <button type="submit">Gửi yêu cầu</button>
+        
+      </form>
+      <p><em>(* vùng không được để trống)</em></p>
+    </div>
+
+    <div class="contact-faq">
+      <h2>Các câu hỏi thường gặp</h2>
+      <ul>
+        <li><a href="#1">Giá tour có bao gồm chi phí khách sạn, ăn uống không?</a></li>
+        <li><a href="#2">Có được hoàn/hủy tour không?</a></li>
+        <li><a href="#3">Tour có bảo hiểm không?</a></li>
+        <li><a href="#4">Trẻ em đi cùng có được giảm giá?</a></li>
+        <li><a href="#5">Tour có khởi hành hàng ngày không?</a></li>
+        <li><a href="#6">Nếu tour bị hủy do thời tiết hoặc lý do bất khả kháng thì sao?</a></li>
+        <li><a href="#7">Có hỗ trợ xe đưa đón tận nơi không?</a></li>
+        <li><a href="#8">Tôi có thể đặt tour cho nhóm riêng không?</a></li>
+        <li><a href="#9">Làm sao để biết tour đã được đặt thành công?</a></li>
+        <li><a href="#10">Tôi có thể thay đổi thông tin đặt tour sau khi đã đặt không?</a></li>
+        <li><a href="#11">Có hỗ trợ đặt phòng khách sạn kèm tour không?</a></li>
+        <li><a href="#12">Tôi có thể chọn chỗ ngồi trên xe không?</a></li>
+      </ul>
+      <p>Nếu bạn không tìm thấy câu hỏi mình thắc mắc ở trên, vui lòng điền vào phiếu yêu cầu tư vấn để được hỗ trợ chi tiết.</p>
+    </div>
+  </div>
+
+  <!--Các câu hỏi thường gặp-->
+  <div class="faq">
+    <h2>CÁC CÂU HỎI THƯỜNG GẶP</h2>
+    <ol>
+      <li id="1"><strong>Giá tour có bao gồm chi phí khách sạn, ăn uống không?</strong></li>
+      <p>Giá tour đã bao gồm chi phí khách sạn theo tiêu chuẩn trong chương trình và các bữa ăn chính đã quy định.
+        Nếu quý khách muốn nâng cấp phòng hoặc ăn thêm ngoài lịch trình, chi phí phát sinh sẽ được tính riêng.</p>
+      <li id="2"><strong>Có được hoàn/hủy tour không?</strong></li>
+      <p>Quý khách có thể hoàn hoặc hủy tour theo chính sách của công ty lữ hành.
+        Mức phí phạt sẽ được áp dụng tùy vào thời gian hủy so với ngày khởi hành.
+        Vui lòng xem kỹ điều khoản trong hợp đồng hoặc liên hệ trực tiếp để được hỗ trợ.</p>
+      <li id="3"><strong>Tour có bảo hiểm không?</strong></li>
+      <p>Tour bao gồm bảo hiểm du lịch cơ bản, hỗ trợ khách hàng trong trường hợp tai nạn hoặc ốm đau trong suốt chuyến đi.
+        Quý khách có thể mua thêm bảo hiểm nâng cao nếu có nhu cầu.</p>
+      <li id="4"><strong>Trẻ em đi cùng có được giảm giá?</strong></li>
+      <p>Trẻ em được áp dụng chính sách giảm giá tùy theo độ tuổi: miễn phí hoặc giảm giá từ 30% - 50%.
+        Chi tiết cụ thể sẽ được thông báo trong từng chương trình tour.</p>
+      <li id="5"><strong>Tour có khởi hành hàng ngày không?</strong></li>
+      <p>Tùy thuộc vào loại tour và điểm đến. Một số tour phổ biến khởi hành hàng ngày, một số tour đặc biệt hoặc theo mùa chỉ khởi hành vào những ngày cố định hoặc theo lịch đặt trước.</p>
+      <li id="6"><strong>Nếu tour bị hủy do thời tiết hoặc lý do bất khả kháng thì sao?</strong></li>
+      <p>Trong trường hợp bất khả kháng như thiên tai, bão lụt, dịch bệnh, công ty du lịch sẽ hỗ trợ đổi ngày khởi hành hoặc hoàn tiền theo chính sách cụ thể. </p>
+      <li id="7"><strong>Có hỗ trợ xe đưa đón tận nơi không?</strong></li>
+      <p>Một số tour sẽ cung cấp dịch vụ xe đưa đón tận nhà hoặc điểm hẹn trong nội thành, còn những tour khác sẽ yêu cầu khách tự túc đến điểm tập trung.</p>
+      <li id="8"><strong>Tôi có thể đặt tour cho nhóm riêng không?</strong></li>
+      <p>Có, công ty nhận tổ chức tour riêng theo yêu cầu với lịch trình linh hoạt và dịch vụ riêng biệt.</p>
+      <li id="9"><strong>Làm sao để biết tour đã được đặt thành công?</strong></li>
+      <p>Quý khách sẽ nhận được email hoặc tin nhắn xác nhận đặt tour, kèm theo thông tin chi tiết về lịch trình và hướng dẫn.</p>
+      <li id="10"><strong>Tôi có thể thay đổi thông tin đặt tour sau khi đã đặt không?</strong></li>
+      <p>Quý khách có thể thay đổi thông tin ít nhất 24h trước ngày khởi hành, có thể kèm theo phí dịch vụ tùy chính sách công ty.</p>
+      <li id="11"><strong>Có hỗ trợ đặt phòng khách sạn kèm tour không?</strong></li>
+      <p>Có, công ty hỗ trợ đặt phòng khách sạn với mức giá ưu đãi khi kết hợp cùng tour.</p>
+      <li id="12"><strong>Tôi có thể chọn chỗ ngồi trên xe không?</strong></li>
+      <p>Chỗ ngồi trên xe sẽ được sắp xếp theo thứ tự đặt tour.
+        Nếu quý khách có nhu cầu đặc biệt hoặc gặp vấn đề về chỗ ngồi, vui lòng liên hệ với bộ phận hỗ trợ của chúng tôi để được giúp đỡ kịp thời.</p>
+    </ol>
+  </div>
+  <!--Bản đồ-->
+  <div class="map-container">
+    <h2>Bản đồ</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.597933649064!2d105.82612117387552!3d21.008748188468292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgVmnhu4duIE5nw6JuIEjDoG5n!5e0!3m2!1svi!2s!4v1748540568104!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>VIETWANDER</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>HOTLINE: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Điều khoản và quy định</h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/back.png"></button>
+  
+</body>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</html>
