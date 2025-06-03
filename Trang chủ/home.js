@@ -42,17 +42,7 @@ let underbannerIndex = 0;
 let underbannerSlides = document.getElementsByClassName("underbanner-slide");
 let underbannerTimer;
 
-function showUnderbannerSlides() {
-  for (let i = 0; i < underbannerSlides.length; i++) {
-    underbannerSlides[i].classList.remove("active");
-  }
 
-  underbannerIndex++;
-  if (underbannerIndex > underbannerSlides.length) underbannerIndex = 1;
-  underbannerSlides[underbannerIndex - 1].classList.add("active");
-
-  underbannerTimer = setTimeout(showUnderbannerSlides, 4000);
-}
 
 function plusUnderbannerSlides(n) {
   clearTimeout(underbannerTimer);
@@ -61,7 +51,6 @@ function plusUnderbannerSlides(n) {
   showUnderbannerSlides();
 }
 
-window.onload = showUnderbannerSlides;
 
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
@@ -179,10 +168,10 @@ function closeModal(modalId) {
 }
 
 // Đóng modal khi click ra ngoài nội dung
-window.onclick = function(event) {
+window.onclick = function (event) {
   const loginModal = document.getElementById('login-modal');
   const registerModal = document.getElementById('register-modal');
-  
+
   if (event.target === loginModal) {
     loginModal.style.display = "none";
   } else if (event.target === registerModal) {
