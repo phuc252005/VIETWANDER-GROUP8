@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Cửa Lò - VIETWANDER</title>
+  <link rel="stylesheet" href="chitiet.css">
+  <script src="chitiet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+        <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+        <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </nav>
+  </header>
+
+
+<!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Phan Thiết - Mũi Né/mui_ne.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Phan Thiết - Mũi Né/suoi_tien.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Phan Thiết - Mũi Né/doi_cat_bay.jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Phan Thiết - Mũi Né/tau_cao_toc.jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour Phan Thiết - Mũi Né<br>Trải nghiệm biển xanh và sa mạc cát độc đáo</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Phan Thiết - Mũi Né</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 3 ngày 2 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p>
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+          <button type="button">
+            <p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p>
+          </button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">3.299.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>3.799.000 Đồng</del></p>
+        </div>
+      </div>
+      <p class="loi-dan"><b>Phan Thiết - Mũi Né, vùng đất nổi tiếng với bãi biển xanh mát, đồi cát bay độc đáo và suối Tiên thơ mộng. Trong bài viết này, Vietwander sẽ cùng bạn khám phá lịch trình chi tiết tour du lịch Phan Thiết - Mũi Né 3 ngày 2 đêm cho chuyến đi sắp tới nhé!</b></p>
+    </div>
+  </div>
+
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+<div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung"
+      style="background-image: url('images/Phan Thiết - Mũi Né/img_duoi_gioi_thieu_chung.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Phan Thiết - Mũi Né</h2>
+        <h3>Phan Thiết - Mũi Né - Vùng đất của biển xanh và sa mạc cát</h3>
+        <p>Nằm cách TP. Hồ Chí Minh khoảng 200km, Phan Thiết - Mũi Né là điểm đến nổi tiếng với bãi biển xanh mát, đồi cát bay độc đáo và văn hóa địa phương đặc sắc. 
+          Mũi Né thu hút du khách bởi những bãi biển tuyệt đẹp, Suối Tiên thơ mộng, và các hoạt động như lướt ván, trượt cát. 
+          Vùng đất này còn nổi tiếng với ẩm thực hải sản tươi ngon và nước mắm Phan Thiết trứ danh.</p>
+      </div>
+    </div>
+    <div class="lichtrinh"
+      style="background-image: url('images/Phan Thiết - Mũi Né/img_duoi_lich_trinh_tour.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Phan Thiết - Mũi Né 3N2Đ</h2>
+        <p>Ngày 1: Di chuyển TP. Hồ Chí Minh - Mũi Né, tham quan Suối Tiên, tắm biển Mũi Né.</p>
+        <p>Ngày 2: Khám phá Đồi Cát Bay, Làng Chài Mũi Né, thưởng thức hải sản tươi sống.</p>
+        <p>Ngày 3: Thăm Tháp Chăm Poshanư, mua đặc sản nước mắm, trả phòng, về TP. Hồ Chí Minh.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+<div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Phan Thiết - Mũi Né 3 ngày 2 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: TP. Hồ Chí Minh - Mũi Né - Suối Tiên</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe và hướng dẫn viên đón quý khách tại điểm hẹn ở TP. Hồ Chí Minh, khởi hành đi Tour Phan Thiết - Mũi Né 3 ngày 2 đêm.</li>
+          <li>Nghỉ ăn sáng trên đường đi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đến Mũi Né khoảng 11h30.</li>
+          <li>Ăn trưa và nhận phòng khách sạn.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tham quan Suối Tiên, khám phá dòng suối thơ mộng với cảnh quan cát đỏ và nước trong xanh.</li>
+          <li>Quý khách tự do tắm biển Mũi Né, tận hưởng bãi biển xanh mát và các hoạt động như lướt ván hoặc thư giãn trên bãi cát.</li>
+          <li>Tham gia chương trình giao lưu văn hóa địa phương với các hoạt động như làm gốm Chăm hoặc tìm hiểu về nghề làm nước mắm.</li>
+          <li>Chụp ảnh, nghỉ ngơi bên bãi biển Mũi Né.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn tối với đặc sản Mũi Né như hải sản tươi sống, gỏi cá mai tại nhà hàng ven biển.</li>
+          <li>Tự do dạo khu phố Tây Mũi Né hoặc khám phá chợ đêm. Nghỉ đêm tại khách sạn.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/suoi_tien1.jpg" alt="Suối Tiên">
+          <div class="caption">Suối Tiên Mũi Né</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/mui_ne_beach.jpg" alt="Bãi biển Mũi Né">
+          <div class="caption">Bãi biển Mũi Né</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/goi_ca_mai.webp" alt="Gỏi cá mai">
+          <div class="caption">Gỏi cá mai</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/nuoc_mam_phan_thiet.jpg" alt="Nước mắm Phan Thiết">
+          <div class="caption">Nước mắm Phan Thiết</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/doi_cat_bay1.jpg" alt="Đồi Cát Bay">
+          <div class="caption">Đồi Cát Bay</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/lang_chai_mui_ne.jpg" alt="Làng Chài Mũi Né">
+          <div class="caption">Làng Chài Mũi Né</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/hai_san.jpg" alt="Hải sản Mũi Né">
+          <div class="caption">Hải sản Mũi Né</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/banh_re.webp" alt="Bánh rế">
+          <div class="caption">Bánh rế - đặc sản Phan Thiết</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Đồi Cát Bay - Làng Chài Mũi Né</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Ăn sáng tại khách sạn.</li>
+          <li>Tham quan Đồi Cát Bay, trải nghiệm trượt cát và ngắm cảnh sa mạc cát độc đáo.</li>
+          <li>Chụp ảnh tại Đồi Cát Trắng, khám phá vẻ đẹp hoang sơ của thiên nhiên.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức các món đặc sản Mũi Né như mực nướng, lẩu thả tại nhà hàng địa phương.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Thăm Làng Chài Mũi Né, tìm hiểu cuộc sống ngư dân và ngắm cảnh thuyền bè trên biển.</li>
+          <li>Tham gia chương trình "Gala Dinner" sôi động với các món ăn đặc sản Mũi Né, được chuẩn bị công phu bởi các đầu bếp chuyên nghiệp, mang đến trải nghiệm ẩm thực难忘.</li>
+          <li>Tự do thư giãn hoặc tham gia các hoạt động thể thao biển như lướt ván diều.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Ăn tối nhẹ nhàng.</li>
+          <li>Dạo khu phố Tây Mũi Né, ngắm cảnh đêm sôi động với các quán bar và nhà hàng ven biển.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Tháp Chăm Poshanu - Mua đặc sản - Về TP. Hồ Chí Minh</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Quý khách ăn sáng tại nhà hàng của khách sạn và tận hưởng những giây phút thư giãn cuối cùng tại Mũi Né.</li>
+          <li>Sau bữa sáng, đoàn tham quan Tháp Chăm Poshanu, khám phá di tích văn hóa Chăm Pa cổ kính.</li>
+          <li>Quý khách tự do mua sắm đặc sản tại chợ Mũi Né như nước mắm Phan Thiết, bánh rế, mực một nắng để làm quà cho người thân và bạn bè.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Quý khách dùng bữa trưa tại nhà hàng với thực đơn nhẹ nhàng nhưng đầy đủ dinh dưỡng, thưởng thức đặc sản gỏi cá mai.</li>
+          <li>Sau bữa trưa, đoàn làm thủ tục trả phòng khách sạn và lên xe khởi hành trở về TP. Hồ Chí Minh.</li>
+          <li>Trên hành trình, xe dừng chân tại Bình Thuận để quý khách mua thêm đặc sản địa phương như thanh long, bánh cốm sữa...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Đoàn tiếp tục di chuyển trên tuyến đường Quốc lộ về TP. Hồ Chí Minh, nghỉ ngơi và thư giãn trên xe.</li>
+          <li>Hướng dẫn viên tổ chức các hoạt động hoạt náo, kể chuyện vui hoặc giao lưu văn nghệ nhẹ nhàng giúp chuyến đi trở nên thú vị hơn.</li>
+          <li>Dự kiến đến nơi lúc 16h30, kết thúc chuyến đi.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/thap_cham.jpg" alt="Tháp Chăm Poshanu">
+          <div class="caption">Tháp Chăm Poshanu</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/nuoc_mam.jpg" alt="Nước mắm Phan Thiết">
+          <div class="caption">Nước mắm Phan Thiết</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/hai_san1.jpg" alt="Hải sản tươi sống">
+          <div class="caption">Hải sản tươi sống</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Phan Thiết - Mũi Né/banh_quai_vac.webp" alt="Bánh quai vạc">
+          <div class="caption">Bánh Quai Vạc</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thông tin  -->
+  <div class="note-container">
+    <h2>Lưu ý:</h2>
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+        <ul>
+          <li>Xe du lịch đời mới với hệ thống máy lạnh hiện đại, lái xe chuyên nghiệp, văn minh, lịch sự phục vụ theo
+            hành trình.</li>
+        </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+        <ul>
+          <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại điểm đón khách ở Hà Nội.</li>
+          <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Cửa Lò.</li>
+        </ul>
+        <li><strong>Lưu trú:</strong></li>
+        <ul>
+          <li>Khách sạn trung tâm tiện nghi sang trọng tivi, điều hoà, phòng khép kín, 2-3 người/phòng.</li>
+        </ul>
+        <li><strong>Ăn uống:</strong></li>
+        <ul>
+          <li>Ăn sáng: 03 bữa điểm tâm sáng (1 tô bún, phở, cháo ngao…+ đồ uống).</li>
+          <li>Ăn chính: 06 bữa với thực đơn địa phương phong phú, đổi món theo ngày.</li>
+        </ul>
+        <li><strong>Tham quan:</strong></li>
+        <ul>
+          <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+        </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 10.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
+      </ul>
+    </div>
+
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+        <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+        <li>Điện thoại, giặt ủi,...trong khách sạn.</li>
+        <li>Phụ thu phòng đơn, phụ thu đối với người Nước ngoài - Việt Kiều và các khoản phụ thu khác (nếu có).</li>
+        <li>Phụ thu cuối tuần 300.000đ/khách.</li>
+        <li>Tip cho tài xế và hướng dẫn viên.</li>
+      </ul>
+    </div>
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li>Trẻ em từ 12 tuổi trở lên: Tính 100% giá tour.</li>
+        <li>Trẻ em từ 05 - 11 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+        <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+      <div class="form-group inline">
+        <div>
+          <label for="date">Ngày đi</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="date">Ngày về</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="people">Số lượng người</label>
+          <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="note">Lưu ý</label>
+        <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+      </div>
+      <div class="form-footer">
+        <div class="checkbox-group">
+          <input type="checkbox" id="confirmation" name="confirmation">
+          <label for="confirmation">Xác nhận thông tin</label>
+        </div>
+        <button type="submit">Yêu cầu tư vấn</button>
+      </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+<!-- Có thể bạn quan tâm -->
+<div class="main-content">
+  <h2>Có thể bạn quan tâm</h2>
+  <div class="moretour">
+    <img src="images/Phú Yên - Quy Nhơn/ganh_da_dia.jpg" alt="Gành Đá Đĩa" class="main-image">
+    <div class="tour-info">
+      <h3><a href="phuyenquynhon3n2d.html">Tour Phú Yên - Quy Nhơn 3N2Đ</a></h3>
+      <p>Khám phá vùng đất hoa vàng cỏ xanh với Gành Đá Đĩa, Kỳ Co thơ mộng...</p>
+      <p class="readmore"><a href="phuyenquynhon3n2d.html">Tìm hiểu thêm</a></p>
+      <div class="small-images">
+        <img src="images/Phú Yên - Quy Nhơn/bai_xep.jpg" alt="">
+        <img src="images/Phú Yên - Quy Nhơn/eo_gio.jpg" alt="">
+        <img src="images/Phú Yên - Quy Nhơn/thap_nhan.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="moretour">
+    <img src="images/Đà Nẵng - Quảng Nam/my_khe.jpg" alt="Bãi biển Mỹ Khê" class="main-image">
+    <div class="tour-info">
+      <h3><a href="danangquangnam3n2d.html">Tour Đà Nẵng - Quảng Nam 3N2Đ</a></h3>
+      <p>Thưởng ngoạn biển Mỹ Khê, phố cổ Hội An và thánh địa Mỹ Sơn đầy cuốn hút...</p>
+      <p class="readmore"><a href="danangquangnam3n2d.html">Tìm hiểu thêm</a></p>
+      <div class="small-images">
+        <img src="images/Đà Nẵng - Quảng Nam/hoi_an.jpg" alt="">
+        <img src="images/Đà Nẵng - Quảng Nam/ba_na_hills.jpg" alt="">
+        <img src="images/Đà Nẵng - Quảng Nam/my_son.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+  <div id="moreTours" style="display: none;">
+    <div class="moretour">
+      <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/bai_sao.jpg" alt="Bãi Sao" class="main-image">
+      <div class="tour-info">
+        <h3><a href="phuquocvindaongoc4n3d.html">Tour Phú Quốc - Vinpearl Land - Đảo Ngọc 4N3Đ</a></h3>
+        <p>Khám phá thiên đường biển đảo Phú Quốc với Bãi Sao, VinWonders và làng chài...</p>
+        <p class="readmore"><a href="phuquocvindaongoc4n3d.html">Tìm hiểu thêm</a></p>
+        <div class="small-images">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/vinwonders.jpg" alt="">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/lang_chai.jpg" alt="">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/hoang_hon_bai_sao.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+</div>
+<!-- Bên phải: Bài viết liên quan -->
+  <div class="sidebar">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      <li><a href="tintuc1.html">Khám phá Đồi Cát Bay Mũi Né: Trải nghiệm sa mạc độc đáo</a></li>
+      <li><a href="tintuc2.html">Hành trình qua Suối Tiên: Kỳ quan thiên nhiên tại Phan Thiết</a></li>
+      <li><a href="tintuc3.html">Tháp Chăm Poshanư: Khám phá văn hóa Chăm Pa ở Mũi Né</a></li>
+      <li><a href="tintuc4.html">Trải nghiệm lướt ván và tắm biển tại Bãi biển Mũi Né</a></li>
+      <li><a href="tintuc5.html">Bí kíp du lịch Phan Thiết - Mũi Né 3 ngày 2 đêm tiết kiệm và thú vị</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s"
+            width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon"
+      src="images/Icon&logo/back.png"></button>
+
+</body>
+
+</html>

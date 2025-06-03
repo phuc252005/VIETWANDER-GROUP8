@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Cửa Lò - VIETWANDER</title>
+  <link rel="stylesheet" href="chitiet.css">
+  <script src="chitiet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+        <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+        <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </nav>
+  </header>
+
+
+<!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cao Bằng/non_nuoc_cao_bang.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cao Bằng/thac_ban_gioc.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cao Bằng/po_bo.jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cao Bằng/suoi_lenin.jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour Hà Nội - Cao Bằng<br>Khám phá thiên nhiên hùng vĩ và lịch sử Việt Nam</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Cao Bằng</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 2 ngày 1 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p>
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+          <button type="button">
+            <p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p>
+          </button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">2.199.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>2.599.000 Đồng</del></p>
+        </div>
+      </div>
+      <p class="loi-dan"><b>Cao Bằng - vùng đất Đông Bắc nổi tiếng với thác Bản Giốc hùng vĩ, hang Pác Bó lịch sử và hồ Thang Hen thơ mộng. Trong bài viết này, Vietwander sẽ cùng bạn khám phá lịch trình chi tiết tour du lịch Hà Nội - Cao Bằng 2 ngày 1 đêm cho chuyến đi sắp tới nhé!</b></p>
+    </div>
+  </div>
+
+    <div style="text-align: center; margin: 40px 0;">
+  <video width="800" height="450" controls>
+    <source src="images/Hà Nội - Cao Bằng/Non nước Cao Bằng - Thác Bản Giốc- Flycam- Timelapse -- Hachi8Media.mp4" type="video/mp4">
+  </video>
+</div>
+
+ <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung"
+      style="background-image: url('images/Hà\ Nội\ -\ Cao\ Bằng/1.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Cao Bằng</h2>
+        <h3>Cao Bằng - Vùng đất thiên nhiên hùng vĩ và lịch sử Việt Nam</h3>
+        <p>Nằm cách Hà Nội khoảng 280km về phía Bắc, Cao Bằng nổi tiếng với cảnh quan thiên nhiên hùng vĩ và các di tích lịch sử ý nghĩa. 
+          Nơi đây tự hào với thác Bản Giốc - một trong những thác nước đẹp nhất Việt Nam, hang Pác Bó gắn liền với Chủ tịch Hồ Chí Minh, và hồ Thang Hen thơ mộng. 
+          Cao Bằng còn thu hút du khách bởi văn hóa dân tộc Tày, Nùng và ẩm thực độc đáo như vịt quay 7 vị, bánh cuốn.</p>
+      </div>
+    </div>
+    <div class="lichtrinh"
+      style="background-image: url('images/Hà Nội - Cao Bằng/2.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Cao Bằng 2N1Đ</h2>
+        <p>Ngày 1: Di chuyển Hà Nội - Cao Bằng, tham quan Thác Bản Giốc, trải nghiệm văn hóa dân tộc Tày, Nùng.</p>
+        <p>Ngày 2: Thăm Pác Bó, mua đặc sản như hạt dẻ Trùng Khánh, trả phòng, về Hà Nội.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Cao Bằng 2 ngày 1 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: Hà Nội - Cao Bằng - Thác Bản Giốc</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe và hướng dẫn viên đón quý khách tại điểm hẹn, khởi hành đi Tour Hà Nội - Cao Bằng 2 ngày 1 đêm.</li>
+          <li>Nghỉ ăn sáng trên đường đi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đến thành phố Cao Bằng khoảng 12h30.</li>
+          <li>Ăn trưa và nhận phòng khách sạn.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tham quan Thác Bản Giốc - một trong những thác nước đẹp nhất Việt Nam, khám phá cảnh quan hùng vĩ và dòng nước trong xanh.</li>
+          <li>Quý khách tự do chụp ảnh, ngắm cảnh thiên nhiên hoặc tham gia trải nghiệm chèo thuyền gần thác.</li>
+          <li>Tham gia chương trình giao lưu văn hóa dân tộc Tày, Nùng với các hoạt động dân gian tại khu vực gần thác.</li>
+          <li>Thư giãn và chụp ảnh tại khu vực thác.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn tối với đặc sản Cao Bằng như vịt quay 7 vị, bánh cuốn Cao Bằng tại nhà hàng địa phương.</li>
+          <li>Tự do dạo phố đi bộ Cao Bằng hoặc khám phá chợ đêm. Nghỉ đêm tại khách sạn.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/thac_ban_gioc1.jpg" alt="Thác Bản Giốc">
+          <div class="caption">Thác Bản Giốc</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/dan_toc_tay.jpg" alt="Văn hóa Tày Nùng">
+          <div class="caption">Văn hóa Tày Nùng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/vit_quay_7_vi.png" alt="Vịt quay 7 vị">
+          <div class="caption">Vịt quay 7 vị</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/banh_cuon_cao_bang.webp" alt="Bánh cuốn Cao Bằng">
+          <div class="caption">Bánh cuốn Cao Bằng</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/hang_pac_bo.jpg" alt="Pác Bó">
+          <div class="caption">Hang Pác Bó</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/nui_thung.jpg" alt="Núi Thủng">
+          <div class="caption">Núi Thủng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/hat_de.jpg" alt="Hạt dẻ Trùng Khánh">
+          <div class="caption">Hạt dẻ Trùng Khánh</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cao Bằng/thit_lon_xong_khoi.jpg" alt="Thịt lợn xông khói">
+          <div class="caption">Thịt lợn xông khói</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Pác Bó - Mua đặc sản - Về Hà Nội</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Ăn sáng tại khách sạn.</li>
+          <li>Tham quan Khu di tích lịch sử Pác Bó - nơi gắn liền với cuộc đời hoạt động cách mạng của Chủ tịch Hồ Chí Minh.</li>
+          <li>Khám phá hang Cốc Bó, suối Lê-nin, và núi Các Mác.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức các món đặc sản Cao Bằng như xôi trám, thịt lợn xông khói tại nhà hàng địa phương.</li>
+          <li>Quý khách tự do mua sắm đặc sản như hạt dẻ Trùng Khánh, măng khô, hoặc mật ong rừng để làm quà.</li>
+          <li>Làm thủ tục trả phòng khách sạn và lên xe khởi hành về Hà Nội.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Đoàn tiếp tục di chuyển trên tuyến đường Quốc lộ về Hà Nội, nghỉ ngơi và thư giãn trên xe.</li>
+          <li>Hướng dẫn viên tổ chức các hoạt động hoạt náo, kể chuyện vui hoặc giao lưu văn nghệ nhẹ nhàng giúp chuyến đi trở nên thú vị hơn.</li>
+          <li>Dự kiến đến Hà Nội lúc 18h30, kết thúc chuyến đi.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-container">
+    <h2>Lưu ý:</h2>
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+        <ul>
+          <li>Xe du lịch đời mới với hệ thống máy lạnh hiện đại, lái xe chuyên nghiệp, văn minh, lịch sự phục vụ theo
+            hành trình.</li>
+        </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+        <ul>
+          <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại điểm đón khách ở Hà Nội.</li>
+          <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Cửa Lò.</li>
+        </ul>
+        <li><strong>Lưu trú:</strong></li>
+        <ul>
+          <li>Khách sạn trung tâm tiện nghi sang trọng tivi, điều hoà, phòng khép kín, 2-3 người/phòng.</li>
+        </ul>
+        <li><strong>Ăn uống:</strong></li>
+        <ul>
+          <li>Ăn sáng: 03 bữa điểm tâm sáng (1 tô bún, phở, cháo ngao…+ đồ uống).</li>
+          <li>Ăn chính: 06 bữa với thực đơn địa phương phong phú, đổi món theo ngày.</li>
+        </ul>
+        <li><strong>Tham quan:</strong></li>
+        <ul>
+          <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+        </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 10.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
+      </ul>
+    </div>
+
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+        <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+        <li>Điện thoại, giặt ủi,...trong khách sạn.</li>
+        <li>Phụ thu phòng đơn, phụ thu đối với người Nước ngoài - Việt Kiều và các khoản phụ thu khác (nếu có).</li>
+        <li>Phụ thu cuối tuần 300.000đ/khách.</li>
+        <li>Tip cho tài xế và hướng dẫn viên.</li>
+      </ul>
+    </div>
+    <div class="note-header" onclick="toggleDropdown(this)">
+      <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+    </div>
+    <div class="note-content">
+      <ul>
+        <li>Trẻ em từ 12 tuổi trở lên: Tính 100% giá tour.</li>
+        <li>Trẻ em từ 05 - 11 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+        <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+      <div class="form-group inline">
+        <div>
+          <label for="date">Ngày đi</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="date">Ngày về</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="people">Số lượng người</label>
+          <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="note">Lưu ý</label>
+        <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+      </div>
+      <div class="form-footer">
+        <div class="checkbox-group">
+          <input type="checkbox" id="confirmation" name="confirmation">
+          <label for="confirmation">Xác nhận thông tin</label>
+        </div>
+        <button type="submit">Yêu cầu tư vấn</button>
+      </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+<!-- Có thể bạn quan tâm -->
+<div class="main-content">
+  <h2>Có thể bạn quan tâm</h2>
+  <div class="moretour">
+    <img src="images/Hà Nội - Ninh Bình/chua_bai_dinh.jpg" alt="Chùa Bái Đính" class="main-image">
+    <div class="tour-info">
+      <h3><a href="hanoininhbinh3n2d.html">Tour Hà Nội - Ninh Bình 3N2Đ</a></h3>
+      <p>Khám phá vẻ đẹp non nước Ninh Bình, hành trình 3N2Đ từ Hà Nội đầy ấn tượng...</p>
+      <p class="readmore"><a href="hanoininhbinh3n2d.html">Tìm hiểu thêm</a></p>
+      <div class="small-images">
+        <img src="images/Hà Nội - Ninh Bình/tam_coc.jpg" alt="">
+        <img src="images/Hà Nội - Ninh Bình/ruou_kim_son.jpg" alt="">
+        <img src="images/Hà Nội - Ninh Bình/hang_mua.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="moretour">
+    <img src="images/Phan Thiết - Mũi Né/mui_ne.jpg" alt="Mũi Né" class="main-image">
+    <div class="tour-info">
+      <h3><a href="phanthietmuine3n2d.html">Tour Phan Thiết - Mũi Né 3N2Đ</a></h3>
+      <p>Thưởng ngoạn biển xanh, cát trắng Mũi Né trong tour Phan Thiết đầy thư giãn...</p>
+      <p class="readmore"><a href="phanthietmuine3n2d.html">Tìm hiểu thêm</a></p>
+      <div class="small-images">
+        <img src="images/Phan Thiết - Mũi Né/mui_ne_beach.jpg" alt="">
+        <img src="images/Phan Thiết - Mũi Né/lang_chai_mui_ne.jpg" alt="">
+        <img src="images/Phan Thiết - Mũi Né/suoi_tien.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+  <div id="moreTours" style="display: none;">
+    <div class="moretour">
+      <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/bai_sao.jpg" alt="Bãi Sao" class="main-image">
+      <div class="tour-info">
+        <h3><a href="phuquocvindaongoc4n3d.html">Tour Phú Quốc - Vinpearl Land - Đảo Ngọc 4N3Đ</a></h3>
+        <p>Khám phá thiên đường biển đảo Phú Quốc với Bãi Sao, VinWonders và làng chài...</p>
+        <p class="readmore"><a href="phuquocvindaongoc4n3d.html">Tìm hiểu thêm</a></p>
+        <div class="small-images">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/1.jpg" alt="">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/lang_chai.jpg" alt="">
+          <img src="images/Phú Quốc - Vinpearl Land - Đảo Ngọc/vinpearl.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+</div>
+
+<!-- Bên phải: Bài viết liên quan -->
+  <div class="sidebar">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      <li><a href="tintuc1.html">Khám phá Thác Bản Giốc: Viên ngọc quý của Cao Bằng</a></li>
+      <li><a href="tintuc2.html">Hành trình khám phá Hà Nội: Từ Hồ Hoàn Kiếm đến Văn Miếu Quốc Tử Giám</a></li>
+      <li><a href="tintuc3.html">Trải nghiệm văn hóa dân tộc Tày tại Cao Bằng: Làng đá Khuổi Ky</a></li>
+      <li><a href="tintuc4.html">Động Ngườm Ngao: Kỳ quan thiên nhiên dưới lòng đất Cao Bằng</a></li>
+      <li><a href="tintuc5.html">Bí kíp du lịch Hà Nội - Cao Bằng 2 ngày 1 đêm tiết kiệm và thú vị</a></li>
+    </ul>
+  </div>
+</div>
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s"
+            width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon"
+      src="images/Icon&logo/back.png"></button>
+
+</body>
+
+</html>
