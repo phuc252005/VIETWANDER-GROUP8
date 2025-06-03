@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Cửa Lò - VIETWANDER</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cửa Lò/cửa lò 2 (2).png" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cửa Lò/chợ đêm.png" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cửa Lò/cảnh đêm cửa lò.png" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Cửa Lò/cửa lò.png" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour Hà Nội - Cửa Lò<br>Trải nghiệm biển cả và ẩm thực xứ Nghệ</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Cửa Lò</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 3 ngày 2 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Xe khách giường nằm</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">2.899.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>3.299.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Cửa Lò được biết đến như một địa điểm "giải nhiệt" đầy lý tưởng trong những ngày hè nóng nực. Trong bài viết này, Vietwander sẽ cùng bạn khám phá lịch trình chi tiết tour du lịch Hà Nội - Cửa Lò 3 ngày 2 đêm cho chuyến đi sắp tới nhé!</b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Hà Nội - Cửa Lò/img\ dưới\ giới\ thiệu\ chung.png'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về biển Cửa Lò</h2>
+        <h3>Biển Cửa Lò - Viên ngọc xanh của miền Trung</h3>
+        <p>Nằm cách thành phố Vinh khoảng 16km, biển Cửa Lò là một trong những bãi biển đẹp và nổi tiếng nhất miền Trung.
+        Sở hữu đường bờ biển dài với bờ cát trắng mịn, nước trong xanh và sóng nhẹ, Cửa Lò là điểm đến lý tưởng vào mỗi dịp mùa hè.
+        Ngoài ra, nơi đây còn hấp dẫn du khách bởi ẩm thực phong phú, hải sản tươi ngon và con người thân thiện, chất phác của vùng đất xứ Nghệ.</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Hà Nội - Cửa Lò/img\ dưới\ lịch\ trình\ tour.png'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour du lịch Cửa Lò 3N2Đ</h2>
+        <p>Ngày 1: Di chuyển Hà Nội - Cửa Lò, tham quan Đảo Lan Châu, tắm biển, dạo chợ đêm.</p>
+        <p>Ngày 2: Thăm làng Sen - Quê Bác Hồ, tham quan di tích, ăn đặc sản xứ Nghệ.</p>
+        <p>Ngày 3: Tắm biển sáng, mua đặc sản, trả phòng, về Hà Nội.</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Cửa Lò 3 ngày 2 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: Hà Nội - Cửa Lò - Đảo Lan Châu</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe và hướng dẫn viên đón quý khách tại điểm hẹn, khởi hành đi Tour Hà Nội Cửa Lò 3 ngày 2 đêm.</li>
+          <li>Nghỉ ăn sáng trên đường đi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đến Cửa Lò khoảng 12h00.</li>
+          <li>Ăn trưa và nhận phòng khách sạn.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tham quan Đảo Lan Châu.</li>
+          <li>Quý khách tự do dạo chơi và tắm biển Cửa Lò với dải cát trắng trải dài, thăm công viên Xanh "Biển một bên".</li>
+          <li>Quý khách có mặt tại bãi biển, tham gia chương trình team building vô cùng vui nhộn với đủ trò chơi hấp dẫn.</li>
+          <li>Dạo bãi biển Cửa Lò, chụp ảnh, nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Ăn hải sản tại nhà hàng ven biển.</li>
+          <li>Tự do tham quan Cửa Lò hoặc tham gia chương trình câu mực trên biển. Nghỉ đêm tại khách sạn. </li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/đảo Lan Châu.png" alt="đảo Lan Châu">
+          <div class="caption">Đảo Lan Châu</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/cảnh đêm cửa lò.png" alt="đêm ở Cửa Lò">
+          <div class="caption">Cửa Lò về đêm</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/tôm nướng.png" alt="hải sản tôm nướng">
+          <div class="caption">Hải sản tôm nướng Cửa Lò</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/hàu nướng.png" alt="hải sản hàu nướng">
+          <div class="caption">Hàu nướng Cửa Lò</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/nhà Bác.png" alt="nhà Bác thời niên thiếu">
+          <div class="caption">Nhà Bác Hồ ở thời còn nhỏ</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/chùa Đại Tuệ.jpg" alt="Chùa Đại Tuệ">
+          <div class="caption">Chùa Đại Tuệ</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/giếng Cốc.png" alt="giếng Cốc">
+          <div class="caption">Giếng Cốc</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/lươn.png" alt="đặc sản Lươn Nghệ An">
+          <div class="caption">Súp lươn - đặc sản Nghệ An</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Thăm quê Bác - Đi chùa Đại Tuệ</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Ăn sáng tại khách sạn.</li>
+          <li>Thăm Làng Sen quê nội Bác Hồ: Nơi Bác Hồ sinh ra và cũng là nơi người sinh sống trong thời niên thiếu.</li>
+          <li>Ghé qua Làng Chùa: Đây là quê ngoại Bác, cũng chính là nơi cụ Nguyễn Sinh Sắc được ông bà ngoại của Bác nhận nuôi dưỡng, giáo dục thành tài.</li> 
+          <li>Tham quan di tích: nhà tranh, giếng Cốc, nhà tưởng niệm.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức các món đặc sản xứ Nghệ tại Nam Đàn.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Tham quan chùa Đại Tuệ.</li>
+          <li>Tham gia chương trình "Gala Dinner" sôi động được tổ chức rất chu đáo và chuẩn bị công phu. Tại đây, du khách sẽ được thưởng thức bữa buffet hải sản hoành tráng chỉ có ở Cửa Lò được chế biến bởi các đầu bếp chuyên nghiệp. Chắc chắn du khách sẽ cảm thấy rất tuyệt vời.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Ăn tối nhẹ nhàng.</li>
+          <li>Dạo biển, ngắm đèn thuyền ngoài khơi.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Mua đặc sản - Về Hà Nội</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Quý khách ăn sáng tại nhà hàng của khách sạn và tận hưởng những giây phút thư giãn cuối cùng bên bãi biển Cửa Lò.</li>
+          <li>Sau bữa sáng, đoàn tự do tắm biển, dạo chơi dọc bờ cát trắng, hít thở không khí trong lành và ghi lại những khoảnh khắc đáng nhớ của chuyến đi.</li>
+          <li>Quý khách cũng có thể đi mua sắm đặc sản tại chợ hải sản Cửa Lò như mực một nắng, nước mắm, cá thu, bánh đa nướng,...để làm quà cho người thân và bạn bè.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Quý khách dùng bữa trưa tại khách sạn với thực đơn nhẹ nhàng nhưng đầy đủ dinh dưỡng.</li>
+          <li>Sau bữa trưa, đoàn làm thủ tục trả phòng khách sạn và lên xe khởi hành trở về Hà Nội.</li>
+          <li>Trên hành trình, xe dừng chân tại Thanh Hóa để quý khách mua thêm đặc sản địa phương như nem chua, dừa tươi, bánh gai...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Đoàn tiếp tục di chuyển trên tuyến đường Quốc lộ về Hà Nội, nghỉ ngơi và thư giãn trên xe.</li> 
+          <li>Hướng dẫn viên tổ chức các hoạt động hoạt náo, kể chuyện vui hoặc giao lưu văn nghệ nhẹ nhàng giúp chuyến đi trở nên thú vị hơn.</li>
+          <li>Dự kiến đến nơi lúc 17h00, kết thúc chuyến đi.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/bình minh.png" alt="ảnh bình minh trên biển Cửa Lò">
+          <div class="caption">Ngắm bình minh trên biển</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/tương Nam Đàn.png" alt="đặc sản tương Nam Đàn">
+          <div class="caption">Đặc sản tương Nam Đàn</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/bánh gai.png" alt="đặc sản bánh gai xứ dừa Anh Sơn">
+          <div class="caption">Đặc sản bánh gai xứ dừa Anh Sơn</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Cửa Lò/bánh đa.png" alt="đặc sản bánh đa Đô Lương">
+          <div class="caption">Đặc sản bánh đa Đô Lương</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-container">
+      <h2>Lưu ý:</h2>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+          <ul>
+            <li>Xe du lịch đời mới với hệ thống máy lạnh hiện đại, lái xe chuyên nghiệp, văn minh, lịch sự phục vụ theo hành trình.</li>
+          </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+          <ul>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại điểm đón khách ở Hà Nội.</li>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt hành trình tại Cửa Lò.</li>
+          </ul> 
+        <li><strong>Lưu trú:</strong></li>
+          <ul>
+            <li>Khách sạn trung tâm tiện nghi sang trọng tivi, điều hoà, phòng khép kín, 2-3 người/phòng.</li>
+          </ul>
+        <li><strong>Ăn uống:</strong></li>
+          <ul>
+            <li>Ăn sáng: 03 bữa điểm tâm sáng (1 tô bún, phở, cháo ngao…+ đồ uống).</li>
+            <li>Ăn chính: 06 bữa với thực đơn địa phương phong phú, đổi món theo ngày.</li>
+          </ul>
+        <li><strong>Tham quan:</strong></li>
+          <ul>
+            <li>Phí thắng cảnh các điểm vào cửa lần thứ nhất các điểm có trong chương trình.</li>
+          </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 10.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối + Khăn lạnh + Mũ du lịch.</li>
+        </ul>
+      </div>
+
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Chi phí đồ uống trong các bữa ăn, chi phí cá nhân và chi phí vui chơi khác không có trong chương trình.</li>
+          <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+          <li>Điện thoại, giặt ủi,...trong khách sạn.</li>
+          <li>Phụ thu phòng đơn, phụ thu đối với người Nước ngoài - Việt Kiều và các khoản phụ thu khác (nếu có).</li>
+          <li>Phụ thu cuối tuần 300.000đ/khách.</li>
+          <li>Tip cho tài xế và hướng dẫn viên.</li>
+        </ul>
+      </div>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Trẻ em từ 12 tuổi trở lên: Tính 100% giá tour.</li>
+          <li>Trẻ em từ 05 - 11 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+          <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour.</li>
+        </ul>
+      </div>  
+  </div>
+   
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/TPHCM - Đà lạt/đà lạt.png" alt="Đà Lạt" class="main-image">
+        <div class="tour-info">
+          <h3><a href="tphcmdalat3n2d.html">Tour TP. Hồ Chí Minh - Đà Lạt 3N2Đ</a></h3>
+          <p>Vùng đất mang trong mình như thành phố ngàn hoa, xứ sở tình yêu,...</p>
+          <p class="readmore"><a href="tphcmdalat3n2d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/TPHCM - Đà lạt/đà lạt 1.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 2.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/cố đô Huế.jpg" alt="Hội An" class="main-image">
+        <div class="tour-info">
+          <h3><a href="tphcmdananghuehoian5n4d.html">Tour TP. Hồ Chí Minh - Đà Nẵng - Huế - Hội An 5N4Đ</a></h3>
+          <p>Nổi tiếng bởi vẻ đẹp kiến trúc truyền thống, hài hòa...</p>
+          <p class="readmore"><a href="tphcmdananghuehoian5n4d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/hội an 1.png" alt="">
+            <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/Cầu Vàng.jpg" alt="">
+            <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/bún bò Huế.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+        <img src="images/Hà Nội - Nha Trang/nha trang 1.jpeg" alt="Nha Trang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoinhatrang4n3d.html">Tour Hà Nội - Nha Trang 4N3Đ</a></h3>
+          <p>Nha Trang - "hòn ngọc của biển Đông" - là một trong những thành phố biển...</p>
+          <p class="readmore"><a href="hanoinhatrang4n3d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Nha Trang/biển nha trang.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 2.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>

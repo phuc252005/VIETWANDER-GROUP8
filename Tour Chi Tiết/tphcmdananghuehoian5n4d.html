@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Tour - VIETWANDER</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/cố đô Huế.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/Cầu Vàng.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/sông Hương.png" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/Hội An.png" alt="Ảnh 4">
+      </div>
+      <div class="slide fade">
+        <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/thả đèn hoa đăng.jpg" alt="Ảnh 5">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour TP. Hồ Chí Minh - Đà Nẵng - Huế - Hội An<br>Thưởng thức vẻ đẹp của sự cổ kính và bình yên</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">TPHCM - Đà Nẵng - Huế - Hội An</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 5 ngày 4 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Máy bay, ô tô du lịch</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">8.199.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>8.699.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Từ vẻ đẹp năng động hiện đại của Đà Nẵng, sự trầm mặc lắng đọng của Huế đến nét cổ kính, duyên dáng của Hội An - chuyến đi này chắc chắn sẽ mang đến cho bạn những trải nghiệm độc đáo, những bức ảnh tuyệt đẹp và những kỷ niệm khó quên.</b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/TPHCM\ -\ Đà\ Nẵng\ -\ Huế\ -\ Hội\ An/img dưới\ giới\ thiệu\ chung.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Đà Nẵng - Huế - Hội An</h2>
+        <h3>Hành trình khám phá di sản miền Trung</h3>
+        <p>Hành trình khám phá miền Trung Việt Nam sẽ thật sự trọn vẹn khi bạn đặt chân đến ba điểm đến nổi tiếng là Đà Nẵng - Huế - Hội An. 
+          Đà Nẵng - được mệnh danh là "thành phố đáng sống nhất Việt Nam", nơi giao hòa giữa hiện đại và thiên nhiên tươi đẹp. 
+          Huế - cố đô mộng mơ bên dòng sông Hương, mang đậm dấu ấn lịch sử và văn hóa triều Nguyễn. 
+          Hội An - phố cổ quyến rũ nằm bên dòng sông Hoài, nơi thời gian như ngưng đọng với những mái nhà rêu phong, đèn lồng rực rỡ và không gian yên bình. 
+          Mỗi nơi mang một vẻ đẹp riêng, hòa quyện giữa thiên nhiên, văn hóa và con người, tạo nên một chuyến đi đầy màu sắc và cảm xúc. 
+          Ba điểm đến - ba sắc màu - nhưng cùng chung một điều: khiến du khách say mê, lưu luyến và mong muốn quay trở lại. 
+          Đà Nẵng - Huế - Hội An - nơi hội tụ hoàn hảo giữa biển xanh, núi non kỳ vĩ, cố đô cổ kính và phố cổ nên thơ.</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/TPHCM\ -\ Đà\ Nẵng\ -\ Huế\ -\ Hội\ An/img dưới\ lịch\ trình\ tour.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour Đà Nẵng - Huế - Hội An 5N4Đ</h2>
+        <p>Ngày 1: Di chuyển từ thành phố Hồ Chí Minh đến Đà Nẵng, tham quan bán đảo Sơn Trà, viếng Linh Ứng Tự. </p>
+        <p>Ngày 2: Tham quan bảo tàng Đà Nẵng, khu di tích danh thắng Ngũ Hành Sơn, đến Trung tâm hành chính cao nhất Miền Trung.</p>
+        <p>Ngày 3: Di chuyển đến Hội An, tham quan và mua sắm tại Phố Cổ, thăm Chùa Cầu Nhật Bản, Nhà Cổ hàng trăm năm tuổi. Trở về Đà Nẵng.</p>
+        <p>Ngày 4: Đến cố đô Huế, thăm Lăng Khải Định, đi xuyên hầm đường bộ đèo Hải Vân và dừng chân tại làng chài Lăng Cô.</p>
+        <p>Ngày 5: Tham quan Đại Nội - Hoàng cung triều Nguyễn, tham quan Ngọ Môn, Điện Thái Hòa,... Trở về Thành phố Hồ Chí Minh.</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Đà Nẵng - Huế - Hội An 5 ngày 4 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: TP. Hồ Chí Minh - Đà Nẵng - Bán đảo Sơn Trà</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Đến sân bay từ sớm để làm thủ tục. Khởi hành từ Thành phố Hồ Chí Minh đến Đà Nẵng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đoàn sẽ đưa quý khách đi dùng bữa rưa với đặc sản nổi tiếng Đà Nẵng "Bánh tráng thịt heo 2 đầu da & Mỳ Quảng". Sau đó sẽ nhận phòng khách sạn 3 sao nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Đoàn sẽ bắt đầu đi tham Bán Đảo Sơn Trà, viếng Linh Ứng Tự - nơi có tượng Phật Bà 67m cao nhất Việt Nam để thưởng ngoạn toàn cảnh phố biển Đà Nẵng trên cao.</li>
+          <li>Tắm biển Mỹ Khê Đà Nẵng - là khu biển đẹp bậc nhất thế giới hiện nay.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Sau khi ăn tối, bạn sẽ được đến Vòng quay Mặt trời SUN WHEEL - Top 10 vòng quay cao nhất thế giới để chiêm ngưởng vẻ đẹp Đà Thành về đêm(Chi phí vé Sun Wheel tự túc).</li>
+          <li>Nghỉ ngơi tại Đà Nẵng.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/Linh Ứng Tự.jpg" alt="Linh Ứng Tự-bán đảo Sơn Trà">
+          <div class="caption">Linh Ứng Tự-Bán đảo Sơn Trà</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/biển Mỹ Khê - ĐN.jpg" alt="Biển Mỹ Khê - Đà Nẵng">
+          <div class="caption">Biển Mỹ Khê - Đà Nẵng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/sun wheel.jpg" alt="Vòng quay mặt trời Sun Wheel">
+          <div class="caption">Vòng quay mặt trời Sun Wheel</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/bánh tráng cuốn thịt heo hai đầu da.png" alt="bánh tráng cuốn thịt heo hai đầu da">
+          <div class="caption">Bánh tráng cuốn thịt heo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/bảo tàng Đà Nẵng.jpg" alt="bảo tàng Đà Nẵng">
+          <div class="caption">Bảo tàng Đà Nẵng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/trung tâm hành chính Đà Nẵng.jpg" alt="trung tâm hành chính Đà Nẵng">
+          <div class="caption">Trung tâm hành chính Đà Nẵng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/làng đá Non Nước.jpg" alt="làng đá Non Nước">
+          <div class="caption">Làng đá Non Nước</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/du thuyền sông Hàn.jpg" alt="du thuyền sông Hàn">
+          <div class="caption">Du thuyền sông Hàn</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Bảo tàng Đà Nẵng - Ngũ Hành Sơn</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Dùng điểm tâm nhẹ rồi đoàn sẽ đón khách đi tham quan Bảo Tàng Đà Nẵng - nơi trưng bày những cổ vật của đời sống văn hóa, lịch sử và con người Xứ Quảng.</li>
+          <li>Đến Trung tâm hành chính cao nhất Miền Trung - Biểu tượng vươn lên mạnh mẽ của thành phố Đà Nẵng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Ăn tại nhà hàng và nghỉ ngơi cho để tiếp tục cho hành trình buổi chiều.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Thăm Làng Nghề Điêu Khắc Đá Non Nước - Di sản văn hóa phi vật thể quốc gia.</li>
+          <li>Tham quan khu di tích- danh thắng Ngũ Hành Sơn.</li>
+          <li>Mua đặc sản về làm quà như chả bò Đà Nẵng - Đặc sản trứ danh, mực rim me, rong biển Mỹ Khê, nước mắm Nam Ô, hải sản khô các loại, ghẹ sữa rim, trà sâm dứa, đồ lưu niệm và thủ công mỹ nghệ .</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Tự do thưởng ngoạn du thuyền trên sông Hàn, ngắm cảnh Đà Thành về đêm, cầu Rồng- cây cầu vòm dáng rồng độc đáo nhất Việt Nam, cụm trang trí nghệ thuật sắp đặt tượng đá Non Nước trên phố Bạch Đằng.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Hội An - Chùa Cầu - Nhà cổ - Xưởng thủ công</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Tham quan và mua sắm tại Phố Cổ, thăm Chùa Cầu Nhật Bản, Nhà Cổ hàng trăm năm tuổi, Hội Quán Phước Kiến & Xưởng thủ công mỹ nghệ để thấy được nét văn hóa cổ kính của Hội An.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức bữa trưa tại nhà hàng Đặc sản Hội An với những món ăn đặc sắc nơi đây: Cao lầu, bánh bao bánh vạc, hoành thánh, ...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Trải nghiệm may áo dài tại tiệm may nổi tiếng, tìm hiểu quy trình may hoặc đặt may áo dài.</li>
+          <li>Tự do dạo phố, mua sắm quà lưu niệm.</li>
+          <li>Mua đặc sản ở Hội An như mắm thính, bánh su sê, bánh ít lá gai, bánh đậu xanh Hội An, rượu Hồng Đào - món quà sức khỏe cho những người thân yêu, đặc sản Hội An - Bánh tổ Quảng Nam, bánh Thuẫn,...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi tối:</strong><br>
+          <li>Trở về Đà Nẵng, chụp ảnh Cầu Quay Sông Hàn.</li>
+          <li>Nghỉ đêm tại khách sạn.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/chùa Cầu Hội An.jpg" alt="Chùa Cầu Hội An">
+          <div class="caption">Chùa Cầu Hội An</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/xưởng thủ công mỹ nghệ Hội An.jpg" alt="xưởng thủ công mỹ nghệ Hội An">
+          <div class="caption">Xưởng thủ công mỹ nghệ Hội An</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/bánh ít lá gai Hội An.jpg" alt="bánh ít">
+          <div class="caption">Bánh ít lá gai</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/cầu quay sông Hàn.png" alt="Cầu quay sông Hàn">
+          <div class="caption">Cầu quay sông Hàn</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 4 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/lăng Khải Định.jpg" alt="lăng Khải Định">
+          <div class="caption">Lăng Khải Định</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/cầu Tràng Tiền.jpg" alt="cầu Tràng Tiền">
+          <div class="caption">Cầu Tràng Tiền về đêm</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 4: Cố Đô Huế - Di sản văn hoá thế giới</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Đoàn sẽ đến Cố Đô Huế - Di sản văn hoá Thế Giới, đi xuyên hầm đường bộ đèo Hải Vân và dừng chân tại làng chài Lăng Cô.</li>
+          <li>Sau đó sẽ tham quan Lăng Khải Định - công trình mang dấu ấn của nhiều trường phái kiến trúc khác nhau, kết hợp Đông -Tây, Âu - Á , Cổ Kim độc đáo.</li>       
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức những món đặc sản của xứ Huế tại nhà hàng như: Bánh bèo, lọc, nậm, khoái,...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Quý khách dạo chơi trên Bến Tòa Khâm, xuống thuyền Rồng để thưởng thức Ca Huế trên sông Hương - nét văn hóa độc đáo của xứ Huế.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 5 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 5: Huế - TP. Hồ Chí Minh</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Tham quan Đại Nội - Hoàng cung triều Nguyễn.</li>
+          <li>Tiếp tục tham quan Ngọ Môn, Điện Thái Hòa, Tử Cấm Thành, Thế Miếu, Hiển Lâm Các, Cửu Đỉnh,… </li>
+          <li>Viếng Chùa Thiên Mụ - Ngôi chùa được xem là cổ nhất ở Huế và là nơi lưu giữ nhiều cổ vật quý giá không chỉ về mặt lịch sử mà còn cả về nghệ thuật.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Thưởng thức bữa trưa tại nhà hàng Huế với những món ăn đặc sắc nơi đây: bún bò, cơm hến, bánh canh, các loại bánh bèo, nậm, lọc, bánh ép, bánh ướt thịt nướng, chè...</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Mua đặc sản ở Huế như tré Huế, nem chua Huế, kẹo mè xửng, bánh ép khô Huế, kẹo cau Huế, bưởi Thanh Trà, trà cung đình Huế, trà vả Huế, mắm tôm chua, mắm sò Lăng Cô, hạt sen Huế,...</li>
+          <li>Làm thủ tục ở sân bay Phú Bài, trở về Thành phố Hồ Chí Minh.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/Tử Cấm Thành.jpg" alt="Tử Cấm thành">
+          <div class="caption">Tử Cấm Thành - Huế</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/chùa Thiên Mụ.jpg" alt="chùa Thiên Mụ">
+          <div class="caption">Chùa Thiên Mụ</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/bún bò Huế.jpeg" alt="bún bò Huế">
+          <div class="caption">Bún bò Huế</div>
+        </div>
+        <div class="image-item">
+          <img src="images/TPHCM - Đà Nẵng - Huế - Hội An/đặc sản mè xửng Huế.jpg" alt="kẹo mè xửng Huế">
+          <div class="caption">Kẹo mè xửng Huế</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="note-container">
+      <h2>Lưu ý:</h2>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+        <li><strong>Vận chuyển:</strong></li>
+          <ul>
+            <li>Xe ô tô đời mới đưa đón theo chương trình.</li>
+          </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+          <ul>
+            <li>Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm thủ tục tại cả hai điểm đi và đến.</li>
+          </ul> 
+        <li><strong>Lưu trú:</strong></li>
+          <ul>
+            <li>Khách sạn 3 sao tiện nghi, điều hòa, tivi, nước nóng lạnh, loại phòng tiêu chuẩn: 2 khách người lớn/phòng (lẻ khách ngủ phòng 3, trường hợp đi 1 người sẽ phụ thu phòng đơn).</li>
+          </ul>
+        <li><strong>Ăn uống:</strong></li>
+          <ul>
+            <li>04 bữa ăn chính, giá tiêu chuẩn.</li>
+            <li>02 bữa sáng: tô/ly theo tiêu chuẩn của chương trình.</li>
+          </ul>
+        <li><strong>Tham quan:</strong></li>
+          <ul>
+            <li>Phí vào các điểm tham quan lần thứ nhất có trong chương trình.</li>
+          </ul>
+        <li><strong>Bảo hiểm du lịch</strong> trọn gói theo quy định.</li>
+        <li><strong>Phục vụ:</strong> Khăn lạnh, nước suối (mỗi ngày 01 chai 500ml/người).</li>
+        </ul>
+      </div>
+
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Hóa đơn giá trị gia tăng (VAT).</li>
+          <li>Bữa tối ngày thứ 2.</li>
+          <li>Đồ uống trong các bữa ăn và các chi phí cá nhân khác.</li>
+          <li>Tiền tip cho hướng dẫn viên và tài xế.</li>
+        </ul>
+      </div>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Trẻ em từ 10 tuổi trở lên: Tính 100% giá tour.</li>
+          <li>Trẻ em từ 04 - 09 tuổi: 75% giá tour người lớn. Tiêu chuẩn: có suất ăn + chỗ ngồi trên xe + vé tham quan, nhưng ngủ chung giường với bố mẹ (Trẻ em không có tiêu chuẩn giường ngủ).</li>
+          <li>Trẻ em dưới 04 tuổi: Miễn phí. Gia đình tự túc lo cho bé. Hai người lớn chỉ kèm theo 01 bé, nếu nhiều hơn phải phụ thu 50% giá tour.</li>
+        </ul>
+      </div>  
+  </div>
+
+   
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/TPHCM - Đà lạt/đà lạt.png" alt="Đà Lạt" class="main-image">
+        <div class="tour-info">
+          <h3><a href="tphcmdalat3n2d.html">Tour TP. Hồ Chí Minh - Đà Lạt 3N2Đ</a></h3>
+          <p>Vùng đất mang trong mình như thành phố ngàn hoa, xứ sở tình yêu,...</p>
+          <p class="readmore"><a href="tphcmdalat3n2d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/TPHCM - Đà lạt/đà lạt 1.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 2.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+          <img src="images/Hà Nội - Cửa Lò/cửa lò 2 (2).png" alt="Huế" class="main-image">
+          <div class="tour-info">
+            <h3><a href="hanoicualo3n2d.html">Tour Hà Nội - Cửa Lò 3N2Đ</a></h3>
+            <p>Thành phố cổ kính, với cảnh sắc nên thơ bên dòng Sông Hương...</p>
+            <p class="readmore"><a href="hanoicualo3n2d.html">Tìm hiểu thêm</a></p>
+            <div class="small-images">
+              <img src="images/Hà Nội - Cửa Lò/cửa lò 1 (2).png" alt="">
+              <img src="images/Hà Nội - Cửa Lò/cửa lò.png" alt="">
+              <img src="images/Hà Nội - Cửa Lò/chợ đêm.png" alt="">
+            </div>
+          </div>
+        </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+        <img src="images/Hà Nội - Nha Trang/nha trang 1.jpeg" alt="Nha Trang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoinhatrang4n3d.html">Tour Hà Nội - Nha Trang 4N3Đ</a></h3>
+          <p>Nha Trang - "hòn ngọc của biển Đông" - là một trong những thành phố biển...</p>
+          <p class="readmore"><a href="hanoinhatrang4n3d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Nha Trang/biển nha trang.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 2.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>
