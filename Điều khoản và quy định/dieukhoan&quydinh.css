@@ -136,23 +136,24 @@ header {
   background-color: #007acc;
 }
 
+/*lời dẫn đầu tiên*/
 .hi {
   font-size: 19px;
   text-transform: uppercase;
   padding: 120px 130px 10px 130px;
 }
-/*main*/
+/*nội dung chính*/
 .container {
   display: flex;
   gap: 40px;
   padding: 10px 130px;
 }
 /* Sidebar bên trái */
-.sidebar {
+.dkqd-sidebar {
   width: 300px;
   border-right: #000 solid 1px;
 }
-.sidebar h3 {
+.dkqd-sidebar h3 {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
