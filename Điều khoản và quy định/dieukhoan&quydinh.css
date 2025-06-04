@@ -142,18 +142,18 @@ header {
   text-transform: uppercase;
   padding: 120px 130px 10px 130px;
 }
-/*nội dung chính*/
+/*main*/
 .container {
   display: flex;
   gap: 40px;
   padding: 10px 130px;
 }
 /* Sidebar bên trái */
-.dkqd-sidebar {
+.sidebar {
   width: 300px;
   border-right: #000 solid 1px;
 }
-.dkqd-sidebar h3 {
+.sidebar h3 {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
