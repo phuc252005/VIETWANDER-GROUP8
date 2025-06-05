@@ -130,3 +130,33 @@ body {
         flex-direction: column;
     }
 }
+
+#confirm-btn {
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: white; /* Màu chữ trắng */
+    padding: 12px 24px; /* Khoảng cách bên trong */
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 5px; /* Bo góc */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    cursor: pointer; /* Con trỏ chuột dạng bàn tay */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng chuyển đổi mượt */
+}
+
+/* Hiệu ứng khi hover */
+#confirm-btn:hover {
+    background-color: #218838; /* Màu xanh đậm hơn khi hover */
+    transform: translateY(-2px); /* Nâng nút lên nhẹ */
+}
+
+/* Hiệu ứng khi nhấn */
+#confirm-btn:active {
+    transform: translateY(0); /* Trở về vị trí ban đầu khi nhấn */
+}
+
+/* Định dạng cho trạng thái disabled (nếu cần) */
+#confirm-btn:disabled {
+    background-color: #6c757d; /* Màu xám khi bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ chuột không cho phép */
+    opacity: 0.7; /* Làm mờ nhẹ */
+}

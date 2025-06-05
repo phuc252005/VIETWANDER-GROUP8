@@ -1,4 +1,3 @@
-// Tính tiền đặt cọc
 const basePrice = 2990000;
 const adultInput = document.getElementById("adults");
 const childInput = document.getElementById("children");
@@ -34,3 +33,10 @@ function changeSlide(n) {
     const slideImg = document.getElementById("slide-img");
     slideImg.src = tourImages[currentSlide];
 }
+
+// Xử lý nút xác nhận đặt tour
+const confirmBtn = document.getElementById("confirm-btn");
+confirmBtn.addEventListener("click", function() {
+    alert("Thanh toán thành công! Cảm ơn bạn đã đặt tour.");
+    window.location.href = "../Trang chủ/trangchu.html";
+});
