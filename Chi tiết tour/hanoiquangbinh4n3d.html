@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Quảng Bình - VIETWANDER</title>
+    <link rel="stylesheet" href="chitiet.css"> 
+    <script src="chitiet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!--banner-->
+    <div class="header-top">
+      <div class="logo-container">
+        <a href="trangchu.html">
+          <img src="images/Icon&logo/logo-img.png" alt="Logo">
+        </a>
+        <h1>VIETWANDER</h1>
+      </div>
+      <div class="login-out">
+          <a href="login.html"><img class="icon" src="images/Icon&logo/đăng nhập.png">Đăng nhập</a>
+          <a href="register.html"><img class="icon" src="images/Icon&logo/đăng ký.png">Đăng ký</a>
+      </div>
+    </div>
+
+    <!--nav-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../Trang chủ/Trang chủ.html">TRANG CHỦ</a></li>
+        <li><a href="../Giới thiệu/Giới thiệu.html">GIỚI THIỆU</a></li>
+        <li class="has-dropdown">
+          <a href="#">DANH MỤC TOUR <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Tour miền Bắc</a></li>
+            <li><a href="#">Tour miền Trung</a></li>
+            <li><a href="#">Tour miền Nam</a></li>
+          </ul>
+        </li>
+        <li><a href="../Trang tin tức/Tin tức.html">TIN TỨC</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> GIỎ HÀNG</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>  
+    </nav>
+  </header>
+
+  <!--phần giới thiệu mở đầu-->
+  <div class="intro-container">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/Hà Nội - Quảng Bình/Quảng Bình.jpg" alt="Ảnh 1">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Quảng Bình/Quảng Bình 1.jpg" alt="Ảnh 2">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Quảng Bình/Quảng Bình 2.jpg" alt="Ảnh 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/Hà Nội - Quảng Bình/Quảng Bình 3.jpg" alt="Ảnh 4">
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="intro">
+      <h2>Tour Hà Nội - Quảng Bình<br>Khám phá hang động - biển xanh - núi rừng</h2>
+      <div class="intro-infor">
+        <p class="hanh-trinh"><img class="icon" src="images/Icon&logo/address-1@2x.png" alt="">Hà Nội - Quảng bình</p>
+        <p class="thoi-gian"><img class="icon" src="images/Icon&logo/icon thời gian.png" alt="">Thời gian: 4 ngày 3 đêm</p>
+        <p class="phuong-tien"><img class="icon" src="images/Icon&logo/icon phương tiện.png" alt="">Phương tiện: Máy bay, ô tô du lịch</p>
+        <p class="khoi-hanh"><img class="icon" src="images/Icon&logo/icon khởi hành.png" alt="">Khởi hành: Theo yêu cầu</p> 
+      </div>
+      <div class="price-container">
+        <div class="add-to-cart">
+        <button type="button"><p><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</p></button>
+        </div>
+        <div class="price-info">
+          <p class="price">GIÁ CHỈ: <span class="highlight">4.389.000 ĐỒNG</span></p>
+          <p class="old-price">Giá gốc: <del>4.899.000 Đồng</del></p>
+        </div>  
+      </div>
+      <p class="loi-dan"><b>Từ động Phong Nha kỳ vĩ, suối nước Moọc trong xanh đến biển Nhật Lệ thơ mộng – tất cả đang chờ bạn đến chiêm ngưỡng và trải nghiệm. Đây sẽ là chuyến đi lý tưởng để hòa mình vào thiên nhiên, thư giãn và lưu giữ những khoảnh khắc tuyệt vời cùng người thân, bạn bè.</b></p>
+    </div>
+  </div>
+  
+  <!--giới thiệu chung và lịch trình ngắn gọn-->
+  <div class="gioithieu-lichtrinh">
+    <div class="gioithieuchung" style="background-image: url('images/Hà\ Nội\ -\ Quảng\ Bình/img dưới giới thiệu chung.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Giới thiệu về Quảng Bình</h2>
+        <h3>Quảng Bình - vùng đất di sản thiên nhiên kỳ vĩ</h3>
+        <p>Quảng Bình - mảnh đất miền Trung đầy nắng gió, không chỉ nổi tiếng là quê hương của đại tướng Võ Nguyên Giáp mà còn được biết đến với danh xưng "vương quốc hang động" của châu Á. 
+          Nơi đây sở hữu vẻ đẹp tự nhiên hùng vĩ với những điểm đến độc đáo như động Phong Nha - Kẻ Bàng, hang Sơn Đoòng (lớn nhất thế giới), động Thiên Đường, sông Chày - hang Tối, suối nước Moọc và bãi biển Nhật Lệ trong xanh. 
+        Đến với Quảng Bình, du khách không chỉ được chiêm ngưỡng thiên nhiên kỳ diệu mà còn cảm nhận được sự bình dị, thân thiện và mến khách của con người nơi đây.</p>
+      </div>
+    </div>
+    <div class="lichtrinh" style="background-image: url('images/Hà\ Nội\ -\ Quảng\ Bình/img dưới lịch trình tour.jpg'); background-size: cover; background-repeat: no-repeat;">
+      <div class="text-background">
+        <h2>Lịch trình tour Hà Nội - Quảng Bình 4N3Đ</h2>
+        <p>Ngày 1: Đi từ Hà Nội đến Quảng Bình, tham quan Làng Bích Họa Cảnh Dương, bãi Đá Nhảy.</p>
+        <p>Ngày 2: Khám phá động Thiên Đường, khu du lịch suối nước Moọc. Tắm biển Nhật Lệ.</p>
+        <p>Ngày 3: Tham quan Quảng Bình Quan, Tháp Chuông - Nhà thờ Tam Tòa.</p>
+        <p>Ngày 4: Mua sắm đặc sản tại chợ Đồng Hới, trở về Hà Nội.</p>
+      </div>
+    </div>    
+  </div>
+
+  <!--lịch trình chi tiết tour-->
+  <div class="detail">
+    <h2>Lịch trình chi tiết tour du lịch Hà Nội - Quảng Bình 4 ngày 3 đêm</h2>
+    <!-- Ngày 1 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 1: Hà Nội - Quảng Bình</h3>
+        <ul><strong><i class="fa-solid fa-sun"></i> Buổi sáng:</strong><br>
+          <li>Xe và Hướng dẫn viên của chúng tôi đón Quý khách tại điểm hẹn và khởi hành đến sân bay Nội Bài. HDV hỗ trợ Quý khách làm thủ tục lên máy bay để đến với Quảng Bình.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-city"></i> Buổi trưa:</strong><br>
+          <li>Đến Quảng Bình, quý khách dùng cơm trưa tại nhà hàng và thưởng thức món Bánh Canh nổi tiếng của Quảng Bình.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-umbrella-beach"></i> Buổi chiều:</strong><br>
+          <li>Tham quan Làng Bích Họa Cảnh Dương: Đây là ngôi làng bích họa đầu tiên của Quảng Bình, với những bức tranh cỡ lớn được vẽ trực tiếp lên tường của nhà dân.</li>
+          <li>Bãi Đá Nhảy: Một bãi biển với sự kỳ công của tạo hóa đã nhào nặn, hòa quyện giữa cát - đá - sóng biển tạo nên những hình thù hấp dẫn, độc đáo.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-utensils"></i> Buổi tối:</strong><br>
+          <li>Đoàn nhận phòng khách sạn và dùng bữa tối tại nhà hàng. Quý khách tự do khám phá thành phố Quảng Bình về đêm.</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Làng Bích Họa Cảnh Dương.jpg" alt=" Làng Bích Họa Cảnh Dương">
+          <div class="caption"> Làng Bích Họa Cảnh Dương</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Bãi Đá Nhảy.jpg" alt="Bãi Đá Nhảy">
+          <div class="caption">Bãi Đá Nhảy</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Bánh Canh.jpg" alt="Bánh Canh">
+          <div class="caption">Bánh Canh Quảng Bình</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/QB về đêm.png" alt="Quảng Bình về đêm">
+          <div class="caption">Quảng Bình về đêm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 2 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Động Thiên Đường.jpg" alt="Động Thiên Đường">
+          <div class="caption">Động Thiên Đường</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Vườn Quốc Gia Phong Nha Kẻ Bàng.jpg" alt="Vườn Quốc Gia Phong Nha Kẻ Bàng">
+          <div class="caption">Vườn Quốc Gia Phong Nha Kẻ Bàng</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/khu du lịch suối nước Moọc.jpg" alt="khu du lịch suối nước Moọc">
+          <div class="caption">Khu du lịch suối nước Moọc</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/biển Nhật Lệ.jpg" alt="biển Nhật Lệ">
+          <div class="caption">Biển Nhật Lệ</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 2: Khám phá Quảng Bình</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Sau khi dùng điểm tâm sáng, xe và HDV đưa quý khách đến tham quan một địa điểm không thể bỏ qua khi đến du lịch Quảng Bình: Động Thiên Đường - Quần thể hang động lớn, kỳ vỹ và lộng lẫy bậc nhất trong Vườn Quốc Gia Phong Nha Kẻ Bàng.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Quý khách dùng cơm trưa tại nhà hàng và thưởng thức đặc sản vùng đất Trường Sơn.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Khám phá khu du lịch suối nước Moọc: Một con suối được chảy ra từ đại ngàn Trường Sơn, quý khách có thể thử sức với các trò chơi mạo hiểm: nhảy ùm - tắm suối - chèo kayak, khám phá dòng suối,... (Chi phí tự túc).</li>
+          <li>Xe đưa Quý khách trở về khách sạn nghỉ ngơi và tự do tham quan tắm biển Nhật Lệ - Top 10 bãi biển đẹp nhất Việt Nam.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Đoàn dùng cơm tối tại nhà hàng và tự do khám phá biển Nhật Lệ về đêm.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ngày 3 -->
+    <div class="day-section">
+      <div class="day-box blue-box">
+        <h3>Ngày 3: Nhà lưu niệm Đại tướng - bãi biển Bảo Ninh</h3>
+        <ul><strong><i class="fa-solid fa-sun-plant-wilt"></i> Buổi sáng:</strong><br>
+          <li>Sau khi Quý khách dùng điểm tâm sáng tại nhà hàng. Xe đưa đoàn đến với làng An Xá - Quê hương của đại tướng Võ Nguyên Giáp.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie"></i> Buổi trưa:</strong><br>
+          <li>Quý khách trở về lại khách sạn dùng cơm trưa và nghỉ ngơi.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-van-shuttle"></i> Buổi chiều:</strong><br>
+          <li>Tiếp tục hành trình Tour Hà Nội Nha Trang 4 ngày 3 đêm với Quảng Bình Quan: là một cổng áng ngữ trên đường thiên lý Bắc Nam thuộc hệ thống lũy Thầy, có từ thời Trịnh Nguyễn phân tranh.</li>
+          <li>Thăm Tượng đài Mẹ Suốt: Là một tượng đài tưởng niệm người phụ nữ anh hùng Nguyễn Thị Suốt, Tháp Chuông - Nhà thờ Tam Tòa: Nhà thờ Tam Tòa bị chiến tranh tàn phá nặng nề đến mức chỉ còn trơ tháp chuông đầy vết đạn.</li>
+          <li>Khám phá bán đảo Bảo Ninh: Đến đây quý khách tự do vui chơi tắm biển tại bãi biển Bảo Ninh.</li> 
+        </ul>
+        <ul><strong><i class="fa-solid fa-sailboat"></i> Buổi tối:</strong><br>
+          <li>Đoàn tự do dùng cơm tối với các món hải sản thơm ngon đặc trưng của vùng biển Quảng Bình (Chi phí bữa tối tự túc).</li>
+        </ul>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Nhà lưu niệm Đại Tướng Võ Nguyên Giáp.jpeg" alt="Nhà lưu niệm Đại Tướng Võ Nguyên Giáp">
+          <div class="caption">Nhà lưu niệm Đại Tướng Võ Nguyên Giáp</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Quảng Bình Quan.jpg" alt="Quảng Bình Quan">
+          <div class="caption">Quảng Bình Quan</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Tượng đài Mẹ Suốt.jpg" alt="Tượng đài Mẹ Suốt">
+          <div class="caption">Tượng đài Mẹ Suốt</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/bán đảo Bảo Ninh.jpg" alt="bán đảo Bảo Ninh">
+          <div class="caption">Bán đảo Bảo Ninh</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngày 4 -->
+    <div class="day-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/Đồi cát Quang Phú.jpg" alt="Đồi cát Quang Phú">
+          <div class="caption">Đồi cát Quang Phú</div>
+        </div>
+        <div class="image-item">
+          <img src="images/Hà Nội - Quảng Bình/khoai deo.jpg" alt="khoai deo">
+          <div class="caption">Khoai deo đặc sản Quảng Bình</div>
+        </div>
+      </div>
+      <div class="day-box blue-box">
+        <h3>Ngày 4: Trở về Hà Nội</h3>
+        <ul><strong><i class="fa-solid fa-landmark"></i> Buổi sáng:</strong><br>
+          <li>Quý khách thức dậy sớm ngắm bình minh tại Đồi cát Quang Phú - Một trong 6 thiên đường cát ở Quảng Bình.</li>
+          <li>Sau đó quý khách về lại khách sạn dùng bữa sáng và tự do tham quan mua sắm tại chợ Đồng Hới.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-cookie-bite"></i> Buổi trưa:</strong><br>
+          <li>Quý khách dùng cơm trưa tại nhà hàng và làm thủ tục trả phòng. Xe đưa quý khách đến sân bay Đồng Hới. HDV hỗ trợ Quý khách làm thủ tục lên máy bay trở về Hà Nội.</li>
+        </ul>
+        <ul><strong><i class="fa-solid fa-person-hiking"></i> Buổi chiều:</strong><br>
+          <li>Đến sân bay Nội Bài, kết thúc chương trình tour Hà Nội Quảng Bình 4 ngày 3 đêm.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-container">
+      <h2>Lưu ý:</h2>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>1. Giá tour bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+        <li><strong>Phương tiện di chuyển:</strong></li>
+          <ul>
+            <li>Vé máy bay khứ hồi chặng Hà Nội - Quảng Bình - Hà Nội (bao gồm 12kg hành lý xách tay + 23kg ký gửi/ hành khách).</li>
+            <li>Xe ô tô đời mới có máy lạnh đưa đón quý khách tại sân bay Nội Bài.</li>
+            <li>Xe ô tô đời mới có máy lạnh phục vụ riêng cho đoàn tham quan.</li>
+          </ul>
+        <li><strong>Hướng dẫn viên:</strong></li>
+          <ul>
+            <li>HDV đón tiễn và thực hiện thủ tục cho đoàn tại sân bay Nội Bài - Hà Nội.</li>
+            <li>HDV vui vẻ, nhiệt tình, nhiều kinh nghiệm theo suốt hành trình.</li>
+          </ul> 
+        <li><strong>Lưu trú:</strong></li>
+          <ul>
+            <li>Khách sạn tiêu chuẩn 3* (hoặc khách sạn tiêu chuẩn tương đương). Tiêu chuẩn 02 khách/ phòng. Nếu lẻ sẽ ngủ ghép 3 khách/ phòng hoặc ngủ riêng nếu quý khách yêu cầu (có phí phụ thu phòng đơn).</li>
+          </ul>
+        <li><strong>Ăn uống:</strong></li>
+          <ul>
+            <li>Ăn sáng: 03 bữa ăn sáng tại Khách sạn.</li>
+            <li>06 bữa ăn chính với thực đơn đa dạng phong phú, gồm các món địa phương, giá tiêu chuẩn.</li>
+          </ul>
+        <li><strong>Tham quan:</strong></li>
+          <ul>
+            <li>Chi phí vào cửa lần thứ nhất cho các thắng cảnh có trong chương trình.</li>
+            <li>Cano tham quan đảo theo chương trình.</li>
+            <li>Xe điện tham quan Động Thiên Đường.</li>
+            <li>Hoa hương viếng Quê hương Đại Tướng.</li>
+          </ul>
+        <li><strong>Bảo hiểm du lịch</strong> suốt tuyến trị giá lên đến 20.000.000 VNĐ/ người.</li>
+        <li><strong>Quà tặng:</strong> Nước suối (1 chai/ ngày) + Mũ du lịch.</li>
+        </ul>
+      </div>
+
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>2. Giá tour không bao gồm <span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Chi phí ăn tối một ngày trong chương trình.</li>
+          <li>Thuế VAT 10%. Nếu quý khách có nhu cầu xuất hóa đơn, công ty du lịch sẽ phụ thu thêm 10% trên giá tour.</li>
+          <li>Chi phí tham quan những điểm không có trong chương trình.</li>
+          <li>Phụ thu phòng đơn và các phụ phí khác (nếu có).</li>
+          <li>Tip cho tài xế và hướng dẫn viên.</li>
+        </ul>
+      </div>
+      <div class="note-header" onclick="toggleDropdown(this)">
+        <h3>3. Điều khoản trẻ em<span class="arrow"><i class="fa fa-chevron-down"></i></span></h3>
+      </div>
+      <div class="note-content">
+        <ul>
+          <li>Trẻ em từ 10 tuổi trở lên: Tính 100% giá tour.</li>
+          <li>Trẻ em từ 05 - 09 tuổi: Tính 85% giá tour (chỗ ngồi trên xe như người lớn nhưng ngủ chung với bố mẹ).</li>
+          <li>Trẻ em dưới 05 tuổi: Miễn phí giá tour (Vé máy bay theo quy định hãng hàng không).</li>
+        </ul>
+      </div>  
+  </div>
+   
+  <!--thu thập thông tin khách hàng để tư vấn tour-->
+  <div class="form-container">
+    <h2>Thông tin khách hàng</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+      </div>
+        <div class="form-group inline">
+            <div>
+              <label for="date">Ngày đi</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="date">Ngày về</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div>
+              <label for="people">Số lượng người</label>
+              <input type="number" id="people" name="people" min="1" step="1" placeholder="Chọn số lượng">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="note">Lưu ý</label>
+          <textarea id="note" name="note" placeholder="Nhập lưu ý"></textarea>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmation" name="confirmation">
+            <label for="confirmation">Xác nhận thông tin</label>
+          </div>
+          <button type="submit">Yêu cầu tư vấn</button>
+        </div>
+    </form>
+  </div>
+
+  <!--phần mở rộng: có thể bạn sẽ thích-->
+  <div class="seemore-container">
+    <!-- Bên trái: Có thể bạn quan tâm -->
+    <div class="main-content">
+      <h2>Có thể bạn quan tâm</h2>
+      <div class="moretour">
+        <img src="images/TPHCM - Đà lạt/đà lạt.png" alt="Đà Lạt" class="main-image">
+        <div class="tour-info">
+          <h3><a href="tphcmdalat3n2d.html">Tour TP. Hồ Chí Minh - Đà Lạt 3N2Đ</a></h3>
+          <p>Vùng đất mang trong mình như thành phố ngàn hoa, xứ sở tình yêu,...</p>
+          <p class="readmore"><a href="tphcmdalat3n2d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/TPHCM - Đà lạt/đà lạt 1.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 2.png" alt="">
+            <img src="images/TPHCM - Đà lạt/đà lạt 3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="moretour">
+        <img src="images/Hà Nội - Nha Trang/nha trang 1.jpeg" alt="Nha Trang" class="main-image">
+        <div class="tour-info">
+          <h3><a href="hanoinhatrang4n3d.html">Tour Hà Nội - Nha Trang 4N3Đ</a></h3>
+          <p>Nha Trang - "hòn ngọc của biển Đông" - là một trong những thành phố biển...</p>
+          <p class="readmore"><a href="hanoinhatrang4n3d.html">Tìm hiểu thêm</a></p>
+          <div class="small-images">
+            <img src="images/Hà Nội - Nha Trang/biển nha trang.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 2.jpg" alt="">
+            <img src="images/Hà Nội - Nha Trang/nha trang 3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      <!-- Các tour khác hiển thị sau khi chọn Xem thêm -->
+      <div id="moreTours" style="display: none;">
+        <div class="moretour">
+          <img src="images/Hà Nội - Cửa Lò/cửa lò 2 (2).png" alt="Huế" class="main-image">
+          <div class="tour-info">
+            <h3><a href="hanoicualo3n2d.html">Tour Hà Nội - Cửa Lò 3N2Đ</a></h3>
+            <p>Thành phố cổ kính, với cảnh sắc nên thơ bên dòng Sông Hương...</p>
+            <p class="readmore"><a href="hanoicualo3n2d.html">Tìm hiểu thêm</a></p>
+            <div class="small-images">
+              <img src="images/Hà Nội - Cửa Lò/cửa lò 1 (2).png" alt="">
+              <img src="images/Hà Nội - Cửa Lò/cửa lò.png" alt="">
+              <img src="images/Hà Nội - Cửa Lò/chợ đêm.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="load-more" onclick="toggleMoreTours()">Xem thêm ▼</button>
+    </div>
+
+    <!-- Bên phải: Bài viết liên quan -->
+    <div class="sidebar">
+      <h3>Bài viết liên quan</h3>
+      <ul>
+        <li><a href="tintuc1.html"></a>Khám phá và check-in chụp ảnh ở Đà Nẵng: Top 5 địa điểm đẹp không nên bỏ qua</li>
+        <li><a href="tintuc2.html"></a>Khám phá ẩm thực miền Trung: Thưởng thức món ăn bình dị ở Huế - Đà Nẵng - Hội An</li>
+        <li><a href="tintuc3.html"></a>Bí quyết giữ gìn sức khỏe khi du lịch dài ngày</li>
+        <li><a href="tintuc4.html"></a>Cách tối ưu trải nghiệm ẩm thực tại địa phương</li>
+        <li><a href="tintuc5.html"></a>Ấn tượng trải nghiệm du lịch Nha Trang bằng tàu hoả</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Vietwander</h2>
+      <div class="hotline">
+        <i class="fa fa-headphones"></i>
+        <span><strong>Hotline: 1800 110 246</strong></span>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-column">
+        <h3>Liên hệ cho chúng tôi</h3>
+        <p><i class="fas fa-phone-alt"></i> Telephone number: 0123456789</p>
+        <p><i class="fab fa-instagram"></i> Instagram: vietwander.tour</p>
+        <p><i class="fab fa-facebook"></i></i> Facebook: Du lịch vietwander</p>
+        <p><i class="fas fa-envelope"></i> Email: tour@vietwander.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Văn phòng</h3>
+        <ul>
+          <li><i class="fas fa-map-marked-alt"></i> Địa chỉ: Số 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6197973125086!2d105.82794770000001!3d21.0078724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac806c0b442d%3A0xb0a7e2c17efb6cd1!2zU-G7kSAxMiBQLiBDaMO5YSBC4buZYywgUXVhbmcgVHJ1bmcsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747069481763!5m2!1svi!2s" width="310" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3><a href="../Điều khoản và quy định/Điều khoản quy định.html">Điều khoản và quy định</a></h3>
+        <ul>
+          <li><a href="#">Chính sách và điều khoản chung</a></li>
+          <li><a href="#">Quy định về thanh toán</a></li>
+          <li><a href="#">Quy định về xác nhận thông tin đặt tour</a></li>
+          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Thanh toán an toàn</h3>
+        <p>Thông tin thanh toán được mã hóa và bảo mật bằng giao thức SSL.</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" />
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VietWander.com. All rights reserved</p>
+    </div>
+  </footer>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/682b48d1f062c51916e08ad7/1irkh8sv4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Về đầu trang"><img class="icon" src="images/Icon&logo/back.png"></button>
+
+</body>
+</html>
